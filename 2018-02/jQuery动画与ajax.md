@@ -1,10 +1,3 @@
----
-title: jQuery动画与ajax
-date: 2017-10-11 21:44:47
-tags: [JavaScript,jQuery]
-categories: JavaScript
----
-
 小练习：
 
 #### 题目1： jQuery 中， `$(document).ready()`是什么意思？

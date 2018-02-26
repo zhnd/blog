@@ -1,10 +1,3 @@
----
-title: jQuery选择器_Dom操作_样式_事件处理_动画
-date: 2017-09-28 17:09:53
-tags: [JavaScript,jQuery]
-categories: JavaScript
----
-
 小练习：
 
 #### 题目1： jQuery 能做什么？
@@ -246,7 +239,7 @@ easing (默认: swing)：类型: String；一个字符串，表示过渡使用�
 
 complete：类型: Function()；在动画完成时执行的函数。
 
-jquery animate demo：[点击查看](http://z2x.coding.mehttps://z2x.github.io/code-learning/web/jQuery-animate-demo.html)
+jquery animate demo：[点击查看](https://z2x.github.io/code-learning/web/jQuery-animate-demo.html)
 
 #### 题目6：如何设置和获取元素内部 HTML 内容？如何设置和获取元素内部文本？
 
@@ -260,6 +253,6 @@ jquery animate demo：[点击查看](http://z2x.coding.mehttps://z2x.github.io/c
 
 * `.attr()`获取匹配的元素集合中的第一个元素的属性的值或 设置每一个匹配元素的一个或多个属性。
 
-练习小作品：[查看地址](http://z2x.coding.mehttps://z2x.github.io/code-learning/web/drop.html)
+练习小作品：[查看地址](https://z2x.github.io/code-learning/web/drop.html)
 
 
