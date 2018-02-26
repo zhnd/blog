@@ -25,7 +25,7 @@
 11. [JavaScript-RegExp对象](https://github.com/z2x/blog/blob/master/2018-02/JavaScript-RegExp%E5%AF%B9%E8%B1%A1.md)
 12. [JavaScript函数与作用域](https://github.com/z2x/blog/blob/master/2018-02/JavaScript%E5%87%BD%E6%95%B0%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F.md)
 13. [JavaScript理解执行环境与作用域链](https://github.com/z2x/blog/blob/master/2018-02/JavaScript%E7%90%86%E8%A7%A3%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83%E4%B8%8E%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE.md)
-14. [JSON](https://github.com/z2x/blog/tree/master/2018-02)
+14. [JSON](https://github.com/z2x/blog/blob/master/2018-02/JSON.md)
 15. [JavaScript-对象-原型](https://github.com/z2x/blog/blob/master/2018-02/JavaScript-%E5%AF%B9%E8%B1%A1-%E5%8E%9F%E5%9E%8B.md)
 16. [JavaScript闭包-定时器-BOM](https://github.com/z2x/blog/blob/master/2018-02/JavaScript%E9%97%AD%E5%8C%85-%E5%AE%9A%E6%97%B6%E5%99%A8-BOM.md)
 17. [JavaScript事件](https://github.com/z2x/blog/blob/master/2018-02/JavaScript%E4%BA%8B%E4%BB%B6.md)
