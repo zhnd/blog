@@ -39,8 +39,8 @@
 25. [前端常见设计模式](https://github.com/z2x/blog/blob/master/2018-02/%E5%89%8D%E7%AB%AF%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
 
 ### 综合知识部分
-1. [w3school-html学习笔记](https://github.com/z2x/blog/blob/master/2018-02/w3school-html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
-2. [HTML基础知识点](https://github.com/z2x/blog/blob/master/2018-02/HTML%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9.md)
-3. [前端页面渲染机制学习](https://github.com/z2x/blog/blob/master/2018-02/%E5%89%8D%E7%AB%AF%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93%E6%9C%BA%E5%88%B6%E5%AD%A6%E4%B9%A0.md)
+1. [w3school-html学习笔记](https://github.com/z2x/blog/issues/1)
+2. [HTML基础知识点](https://github.com/z2x/blog/issues/2)
+3. [前端页面渲染机制学习](https://github.com/z2x/blog/issues/3)
 4. [浏览器兼容](https://github.com/z2x/blog/blob/master/2018-02/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9.md)
 5. [项目文件夹信息](https://github.com/z2x/blog/blob/master/2018-02/%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E4%BF%A1%E6%81%AF.md)
