@@ -22,7 +22,7 @@
   </div>
 ```
 
-![父容器高度塌陷](http://ov2hj85gi.bkt.clouddn.com/float-cave.png)
+![父容器高度塌陷](https://raw.githubusercontent.com/z2x/blog/master/images/float-cave.png)
 
 ## 对其他浮动元素的影响
 如果父容器的宽度足够子元素的排列，那么会与其他浮动元素在同一方向上依次排列；
@@ -38,7 +38,7 @@
     </div>
 ```
 
-![左浮动依次排列](http://ov2hj85gi.bkt.clouddn.com/float-left.png)
+![左浮动依次排列](https://raw.githubusercontent.com/z2x/blog/master/images/float-left.png)
 
 如果父容器的宽度不够子元素的排列，超出的元素会向下移动，并寻找足够的空间；此时加入元素高度不统一，元素向下移动时会被卡住。
 
@@ -53,7 +53,7 @@
     </div>
 ```
 
-![元素会被卡住](http://ov2hj85gi.bkt.clouddn.com/float-deranged.png)
+![元素会被卡住](https://raw.githubusercontent.com/z2x/blog/master/images/float-deranged.png)
 
 ## 对普通元素的影响
 浮动元素之前的普通元素不受影响。浮动元素之后的普通元素因感知不到浮动元素的存在会被浮动元素覆盖。
@@ -69,7 +69,7 @@
     </div>
 ```
 
-![行框围绕浮动框](http://ov2hj85gi.bkt.clouddn.com/float-p-deranged.png)
+![行框围绕浮动框](https://raw.githubusercontent.com/z2x/blog/master/images/float-p-deranged.png)
 
 #  清除浮动指什么? 如何清除浮动? 两种以上方法
 
@@ -216,14 +216,14 @@ z-index属性一共可以取3个值：
 
 显示效果为：
 
-![stacking level](http://ov2hj85gi.bkt.clouddn.com/z-index-1.png)
+![stacking level](https://raw.githubusercontent.com/z2x/blog/master/images/z-index-1.png)
 在这个示例中，top盒子设置为`z-index:4;`而bottom盒子设置为`z-index:3;`根据上图可以得知，top盒子的层叠顺序高于bottom的层叠顺序,所以top盒子显示在上层。
 
 层叠顺序
 
 每个元素都有层叠顺序，当元素发生层叠时，元素的层级高的会优先显示在上面，层级一样的则会根据dom的先后顺序进行渲染，后面的会覆盖前面的。
 
-![stacking level](http://ov2hj85gi.bkt.clouddn.com/stacking-level.png)
+![stacking level](https://raw.githubusercontent.com/z2x/blog/master/images/stacking-level.png)
 
 根据上图不使用`z-index`改变层叠顺序：
 
@@ -259,7 +259,7 @@ z-index属性一共可以取3个值：
   </div>
 </body>
 ```
-显示效果为：![stacking level](http://ov2hj85gi.bkt.clouddn.com/z-index-2.png)
+显示效果为：![stacking level](https://raw.githubusercontent.com/z2x/blog/master/images/z-index-2.png)
 
 在这个示例中，top盒子设置为inline-block；而bottom盒子仍然为block，根据上图可以得知，top盒子的层叠顺序高于bottom的层叠顺序,所以top盒子显示在上层。
 
@@ -310,7 +310,7 @@ z-index的层叠顺序并不是值越大，显示越靠前，前提是要在同�
   </div>
 </body>
 ```
-显示效果为：![stacking level](http://ov2hj85gi.bkt.clouddn.com/z-index-3.png)
+显示效果为：![stacking level](https://raw.githubusercontent.com/z2x/blog/master/images/z-index-3.png)
 
 参考资料：
 [http://web.jobbole.com/86008/](http://web.jobbole.com/86008/)
@@ -367,7 +367,7 @@ IE6、7内有个hasLayout的概念，当元素的hasLayout属性值为true的时
 
 毗邻的两个兄弟元素之间的外边距会塌陷（除非后者兄弟姐妹需要清除过去的浮动）。
 
-![stacking level](http://ov2hj85gi.bkt.clouddn.com/Collapsing-margin-1.gif)
+![stacking level](https://raw.githubusercontent.com/z2x/blog/master/images/Collapsing-margin-1.gif)
 
 2. 块级父元素与其第一个/最后一个子元素
 
@@ -375,7 +375,7 @@ IE6、7内有个hasLayout的概念，当元素的hasLayout属性值为true的时
 
 类似的，若块级父元素的 margin-bottom 与它的最后一个子元素的margin-bottom 之间没有父元素的 border、padding、inline content、height、min-height、 max-height 分隔时，就会发生下外边距合并现象。
 
-![stacking level 2](http://ov2hj85gi.bkt.clouddn.com/Collapsing-margin-2.gif)
+![stacking level 2](https://raw.githubusercontent.com/z2x/blog/master/images/Collapsing-margin-2.gif)
 
 * 父元素的上边距会与第一个子元素的上边距合并；
 * 最后一个子元素的下边距会与父元素的下边距合并。
@@ -396,11 +396,11 @@ IE6、7内有个hasLayout的概念，当元素的hasLayout属性值为true的时
 
 如果存在一个空的块级元素，其 border、padding、inline content、height、min-height 都不存在。那么此时它的上下边距中间将没有任何阻隔，此时它的上下外边距将会合并。
 
-![stacking level 3](http://ov2hj85gi.bkt.clouddn.com/Collapsing-margin-3.gif)
+![stacking level 3](https://raw.githubusercontent.com/z2x/blog/master/images/Collapsing-margin-3.gif)
 
 4. 以上3种情况的混合：
 
-   ![stacking level 4](http://ov2hj85gi.bkt.clouddn.com/Collapsing-margin-4.gif)
+   ![stacking level 4](https://raw.githubusercontent.com/z2x/blog/master/images/Collapsing-margin-4.gif)
 
 参考信息：
 [https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)

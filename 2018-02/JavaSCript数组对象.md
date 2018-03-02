@@ -306,7 +306,7 @@ var everyResults = number.every(function(item, index, array) {
 });
 console.log(everyResults);
 // false
-// 
+//
 var someResults = number.some(function(item, index, array) {
   return (item > 3);
 });
@@ -314,7 +314,7 @@ console.log(someResults);
 // true
 ```
 
-## `.reduce(function(prev, cur, index, array)` 
+## `.reduce(function(prev, cur, index, array)`
 ## `.reduceRight(function(prev, cur, index, array)`
 
 遍历数组，调用回调函数，将数组元素组合成一个值，reduce从索引最小值开始，reduceRight反向，方法有两个参数

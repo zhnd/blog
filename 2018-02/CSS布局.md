@@ -2,7 +2,7 @@
 
 ## 模型
 
-![单列布局模型](http://ov2hj85gi.bkt.clouddn.com/layout-1.png)
+![单列布局模型](https://raw.githubusercontent.com/z2x/blog/master/images/layout-1.png)
 
 ### 一栏布局
 
@@ -99,7 +99,7 @@ min-width: aotu | length | percent;
 
 一列固定宽度，另外一列自适应宽度
 
-![单列布局模型](http://ov2hj85gi.bkt.clouddn.com/layout-3.png)
+![单列布局模型](https://raw.githubusercontent.com/z2x/blog/master/images/layout-3.png)
 
 ### 固定栏在左
 
@@ -179,7 +179,7 @@ min-width: aotu | length | percent;
 
 两侧两列固定宽度，中间列自适应宽度
 
-![单列布局模型](http://ov2hj85gi.bkt.clouddn.com/layout-4.png)
+![单列布局模型](https://raw.githubusercontent.com/z2x/blog/master/images/layout-4.png)
 
 ### 浮动方法
 

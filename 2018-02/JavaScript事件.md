@@ -68,13 +68,13 @@ DOM2级事件定义了两个方法用于处理指定和删除事件处理程序�
 
 事件开始时由最具体的元素接收，然后逐级向上传播到较为不具体的元素；
 
-![IE bubble](http://ov2hj85gi.bkt.clouddn.com/IE-bubble.png)
+![IE bubble](https://raw.githubusercontent.com/z2x/blog/master/images/IE-bubble.png)
 
 * DOM事件流
 
 DOM2级事件规定事件流包括三个阶段，事件捕获阶段，处于目标阶段，事件冒泡阶段，首先发生的是事件捕获，为截取事件提供机会，然后是实际目标接收事件，最后是冒泡阶段。
 
-![DOM2 bubble](http://ov2hj85gi.bkt.clouddn.com/DOM2-bubble.png)
+![DOM2 bubble](https://raw.githubusercontent.com/z2x/blog/master/images/DOM2-bubble.png)
 
 #### 题目4：如何阻止事件冒泡？ 如何阻止默认事件？
 
@@ -87,7 +87,7 @@ event.stopPropagation();
 * 阻止事件默认行为：
 
 ```javascript
-event.preventDefault(); 
+event.preventDefault();
 ```
 
 * 阻止冒泡的兼容写法，值为false为允许冒泡：
@@ -101,7 +101,7 @@ event.cancelBubble = false;
 * 阻止默认事件的兼容写法，值为flase为允许默认事件：
 
 ```javascript
-event.returnValue = true; 
+event.returnValue = true;
 
 event.returnValue = false;
 ```
@@ -178,9 +178,9 @@ event.returnValue = false;
 
 ```html
   <ul class="ct">
-    <li data-img="http://ov2hj85gi.bkt.clouddn.com/people-sea.jpg">鼠标放置查看图片1</li>
-    <li data-img="http://ov2hj85gi.bkt.clouddn.com/Sky-background.jpg">鼠标放置查看图片2</li>
-    <li data-img="http://ov2hj85gi.bkt.clouddn.com/sky-sea-finish.jpg">鼠标放置查看图片3</li>
+    <li data-img="https://raw.githubusercontent.com/z2x/blog/master/images/people-sea.jpg">鼠标放置查看图片1</li>
+    <li data-img="https://raw.githubusercontent.com/z2x/blog/master/images/Sky-background.jpg">鼠标放置查看图片2</li>
+    <li data-img="https://raw.githubusercontent.com/z2x/blog/master/images/sky-sea-finish.jpg">鼠标放置查看图片3</li>
   </ul>
   <div class="img-preview"></div>
 ```
