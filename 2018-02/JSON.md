@@ -37,7 +37,7 @@ var json2 = [
 
 * 对象是一个无序的“‘名称/值’对”集合。一个对象以“{”（左括号）开始，“}”（右括号）结束。每个“名称”后跟一个“:”（冒号）；“‘名称/值’ 对”之间使用“,”（逗号）分隔。
 
-![JSON object](https://raw.githubusercontent.com/z2x/blog/master/images/17-8-23/91210783.jpg)
+![JSON object](https://raw.githubusercontent.com/z2x/blog/master/images/91210783.jpg)
 
 ```json
 {
@@ -55,7 +55,7 @@ var json2 = [
 
 * 数组是值（value）的有序集合。一个数组以“[”（左中括号）开始，“]”（右中括号）结束。值之间使用“,”（逗号）分隔。
 
-![JSON array](https://raw.githubusercontent.com/z2x/blog/master/images/17-8-23/13650476.jpg)
+![JSON array](https://raw.githubusercontent.com/z2x/blog/master/images/13650476.jpg)
 
 ```json
 [{
@@ -70,7 +70,7 @@ var json2 = [
 
 * 值（value）可以是双引号括起来的字符串（string）、数值(number)、true、false、 null、对象（object）或者数组（array）。这些结构可以嵌套。
 
-![Json value](https://raw.githubusercontent.com/z2x/blog/master/images/17-8-23/14122608.jpg)
+![Json value](https://raw.githubusercontent.com/z2x/blog/master/images/14122608.jpg)
 
 * 字符串（string）是由双引号包围的任意数量Unicode字符的集合，使用反斜线转义。一个字符（character）即一个单独的字符串（character string）。
 
@@ -78,11 +78,11 @@ var json2 = [
 
 **JSON字符串必须使用双引号**
 
-![JSON string](https://raw.githubusercontent.com/z2x/blog/master/images/17-8-23/85287197.jpg)
+![JSON string](https://raw.githubusercontent.com/z2x/blog/master/images/85287197.jpg)
 
 * 数值（number）也与C或者Java的数值非常相似。除去未曾使用的八进制与十六进制格式。除去一些编码细节。
 
-![JSON number](https://raw.githubusercontent.com/z2x/blog/master/images/17-8-23/66268162.jpg)
+![JSON number](https://raw.githubusercontent.com/z2x/blog/master/images/66268162.jpg)
 
 # 解析和序列化
 
