@@ -36,7 +36,7 @@
 22. [jQuery-轮播](https://github.com/z2x/blog/issues/34)
 23. [jQuery-懒加载](https://github.com/z2x/blog/issues/35)
 24. [JavaScript-AMD_CMD_RequireJS](https://github.com/z2x/blog/issues/36)
-25. [前端常见设计模式](https://github.com/z2x/blog/blob/master/2018-02/%E5%89%8D%E7%AB%AF%E5%B8%B8%E8%A7%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md)
+25. [前端常见设计模式](https://github.com/z2x/blog/issues/39)
 
 ### 综合知识部分
 1. [w3school-html学习笔记](https://github.com/z2x/blog/issues/1)
