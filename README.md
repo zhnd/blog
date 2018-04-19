@@ -44,3 +44,7 @@
 3. [前端页面渲染机制学习](https://github.com/z2x/blog/issues/3)
 4. [浏览器兼容](https://github.com/z2x/blog/issues/4)
 5. [项目文件夹信息](https://github.com/z2x/blog/issues/5)
+
+### 工具使用
+
+1. [我的Sublime Text使用记录](https://github.com/z2x/blog/issues/38)
