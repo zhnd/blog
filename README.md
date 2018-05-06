@@ -2,6 +2,10 @@
 
 ## 学习笔记
 
+### React部分
+
+1. [Redux状态管理](https://github.com/z2x/blog/issues/40)
+
 ### CSS部分
 1. [CSS选择器](https://github.com/z2x/blog/issues/6)
 2. [CSS常见样式](https://github.com/z2x/blog/issues/7)
