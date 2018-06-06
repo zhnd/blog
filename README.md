@@ -4,51 +4,58 @@
 
 ### React部分
 
-1. [Redux状态管理](https://github.com/z2x/blog/issues/40)
+* [Redux状态管理](https://gitee.com/zhued/blog/blob/master/2018-05/Redux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md)
 
 ### CSS部分
-1. [CSS选择器](https://github.com/z2x/blog/issues/6)
-2. [CSS常见样式](https://github.com/z2x/blog/issues/7)
-3. [CSS常见样式2](https://github.com/z2x/blog/issues/8)
-4. [CSS布局](https://github.com/z2x/blog/issues/9)
-5. [CSS-综合](https://github.com/z2x/blog/issues/10)
-6. [使用flexbox进行布局](https://github.com/z2x/blog/issues/11)
-7. [浮动定位BFC边距合并](https://github.com/z2x/blog/issues/12)
+
+* [使用flexbox进行布局](https://gitee.com/zhued/blog/blob/master/2018-02/使用flexbox进行布局.md)
+* [CSS-综合](https://gitee.com/zhued/blog/blob/master/2018-02/CSS-综合.md)
+* [浮动定位BFC边距合并](https://gitee.com/zhued/blog/blob/master/2018-02/浮动定位BFC边距合并.md)
+* [CSS布局](https://gitee.com/zhued/blog/blob/master/2018-02/CSS布局.md)
+* [CSS常见样式](https://gitee.com/zhued/blog/blob/master/2018-02/CSS常见样式.md)
+* [CSS常见样式2](https://gitee.com/zhued/blog/blob/master/2018-02/CSS常见样式2.md)
+* [CSS选择器](https://gitee.com/zhued/blog/blob/master/2018-02/CSS选择器.md)
+
 
 ### JavaScript部分
-1. [JavaScript语句](https://github.com/z2x/blog/issues/13)
-2. [JavaScript跨域](https://github.com/z2x/blog/issues/14)
-3. [JavaScript字符串](https://github.com/z2x/blog/issues/15)
-4. [JavaScript操作符](https://github.com/z2x/blog/issues/16)
-5. [JavaScript引用类型](https://github.com/z2x/blog/issues/17)
-6. [JavaScript数据类型](https://github.com/z2x/blog/issues/18)
-7. [JavaSCript数组对象](https://github.com/z2x/blog/issues/19)
-8. [JavaScript-DOM操作](https://github.com/z2x/blog/issues/20)
-9. [JavaScript-Date对象](https://github.com/z2x/blog/issues/21)
-10. [JavaScript-Math对象](https://github.com/z2x/blog/issues/22)
-11. [JavaScript-RegExp对象](https://github.com/z2x/blog/issues/23)
-12. [JavaScript函数与作用域](https://github.com/z2x/blog/issues/24)
-13. [JavaScript理解执行环境与作用域链](https://github.com/z2x/blog/issues/25)
-14. [JSON](https://github.com/z2x/blog/issues/26)
-15. [JavaScript-对象-原型](https://github.com/z2x/blog/issues/27)
-16. [JavaScript闭包-定时器-BOM](https://github.com/z2x/blog/issues/28)
-17. [JavaScript事件](https://github.com/z2x/blog/issues/29)
-18. [JavaScript-ajax实践](https://github.com/z2x/blog/issues/30)
-19. [JavaScript-this-原型链-继承](https://github.com/z2x/blog/issues/31)
-20. [jQuery选择器-Dom操作-样式-事件处理-动画](https://github.com/z2x/blog/issues/32)
-21. [jQuery动画与ajax](https://github.com/z2x/blog/issues/33)
-22. [jQuery-轮播](https://github.com/z2x/blog/issues/34)
-23. [jQuery-懒加载](https://github.com/z2x/blog/issues/35)
-24. [JavaScript-AMD_CMD_RequireJS](https://github.com/z2x/blog/issues/36)
-25. [前端常见设计模式](https://github.com/z2x/blog/issues/39)
+* [前端常见设计模式](https://gitee.com/zhued/blog/blob/master/2018-02/前端常见设计模式.md)
+* [jQuery-懒加载](https://gitee.com/zhued/blog/blob/master/2018-02/jQuery-懒加载.md)
+* [jQuery动画与ajax](https://gitee.com/zhued/blog/blob/master/2018-02/jQuery动画与ajax.md)
+* [JavaScript引用类型](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript引用类型.md)
+* [JavaScript-this-原型链-继承](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-this-原型链-继承.md)
+* [JavaScript-ajax实践](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-ajax实践.md)
+* [jQuery选择器-Dom操作-样式-事件处理-动画](https://gitee.com/zhued/blog/blob/master/2018-02/jQuery选择器-Dom操作-样式-事件处理-动画.md)
+* [jQuery-轮播](https://gitee.com/zhued/blog/blob/master/2018-02/jQuery-轮播.md)
+* [JavaScript-AMD_CMD_RequireJS](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-AMD_CMD_RequireJS.md)
+
+* [JavaScript闭包-定时器-BOM](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript闭包-定时器-BOM.md)
+* [JavaScript跨域](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript跨域.md)
+* [JavaScript函数与作用域](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript函数与作用域.md)
+* [JavaScript理解执行环境与作用域链](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript理解执行环境与作用域链.md)
+* [JavaScript-对象-原型](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-对象-原型.md)
+* [JavaScript-DOM操作](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-DOM操作.md)
+* [JavaScript事件](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript事件.md)
+* [JSON](https://gitee.com/zhued/blog/blob/master/2018-02/JSON.md)
+* [JavaScript-Date对象](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-Date对象.md)
+* [JavaScript-Math对象](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-Math对象.md)
+* [JavaScript-RegExp对象](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript-RegExp对象.md)
+* [JavaSCript数组对象](https://gitee.com/zhued/blog/blob/master/2018-02/JavaSCript数组对象.md)
+* [JavaScript操作符](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript操作符.md)
+* [JavaScript数据类型](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript数据类型.md)
+
+* [JavaScript字符串](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript字符串.md)
+
+* [JavaScript语句](https://gitee.com/zhued/blog/blob/master/2018-02/JavaScript语句.md)
 
 ### 综合知识部分
-1. [w3school-html学习笔记](https://github.com/z2x/blog/issues/1)
-2. [HTML基础知识点](https://github.com/z2x/blog/issues/2)
-3. [前端页面渲染机制学习](https://github.com/z2x/blog/issues/3)
-4. [浏览器兼容](https://github.com/z2x/blog/issues/4)
-5. [项目文件夹信息](https://github.com/z2x/blog/issues/5)
+
+* [项目文件夹信息](https://gitee.com/zhued/blog/blob/master/2018-02/项目文件夹信息.md)
+* [浏览器兼容](https://gitee.com/zhued/blog/blob/master/2018-02/浏览器兼容.md)
+* [前端页面渲染机制学习](https://gitee.com/zhued/blog/blob/master/2018-02/前端页面渲染机制学习.md)
+* [HTML基础知识点](https://gitee.com/zhued/blog/blob/master/2018-02/HTML基础知识点.md)
+* [w3school-html学习笔记](https://gitee.com/zhued/blog/blob/master/2018-02/w3school-html学习笔记.md)
+
 
 ### 工具使用
 
-1. [我的Sublime Text使用记录](https://github.com/z2x/blog/issues/38)
+1. [我的Sublime Text使用记录](https://gitee.com/zhued/blog/blob/master/2018-04/%E6%88%91%E7%9A%84Sublime%20Text%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95.md)
