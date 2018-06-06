@@ -1,4 +1,4 @@
-![css-flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/css-flexbox.png)
+![css-flexbox](images/css-flexbox.png)
 
 
 Flex box布局模型的主要目的是提供更有效率的布局方式，尤其是当容器内元素的尺寸不固定的时候更能表现出它的优势。它能够自动识别子元素的尺寸，从而为盒装模型提供更高的灵活性。
@@ -11,7 +11,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 下图为Flexbox模型图：
 
-![CSS3-Flexbox-Model](https://raw.githubusercontent.com/z2x/blog/master/images/CSS3-Flexbox-Model.jpg)
+![CSS3-Flexbox-Model](images/CSS3-Flexbox-Model.jpg)
 
 
 ## （一）几个术语
@@ -29,7 +29,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 # 二、浏览器兼容情况
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flexbox-compatibility.png)
+![CSS flexbox](images/flexbox-compatibility.png)
 
 点击查看更多信息：[flexbox-compatibility](http://caniuse.com/#feat=flexbox)
 
@@ -80,7 +80,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 主轴为水平方向，起点在左端:
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-direction-row.png)
+![CSS flexbox](images/flex-direction-row.png)
 
 ```css
 .flex-container {
@@ -91,7 +91,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 主轴为水平方向，起点在右端:
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-direction-row-reverse.png)
+![CSS flexbox](images/flex-direction-row-reverse.png)
 
 ```css
 .flex-container {
@@ -102,7 +102,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 主轴为垂直方向，起点在上端:
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-direction-column.png)
+![CSS flexbox](images/flex-direction-column.png)
 
 ```css
 .flex-container {
@@ -113,7 +113,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 主轴为垂直方向，起点在下端:
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-direction-column-reverse.png)
+![CSS flexbox](images/flex-direction-column-reverse.png)
 
 ##（二）flex-wrap属性
 `flex-wrap`属性决定内容在抽线上排列不下的换行方式。
@@ -132,7 +132,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 }
 ```
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-wrap-nowrap.png)
+![CSS flexbox](images/flex-wrap-nowrap.png)
 
 设置不换行。
 
@@ -145,7 +145,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 }
 ```
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-wrap-wrap.png)
+![CSS flexbox](images/flex-wrap-wrap.png)
 
 设置自动换行，且第一行在上方。
 
@@ -158,7 +158,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 }
 ```
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-wrap-wrap-reverse.png)
+![CSS flexbox](images/flex-wrap-wrap-reverse.png)
 
 设置自动换行，且第一行在下方。
 
@@ -202,7 +202,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   justify-content:         flex-start;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/justify-content-flex-start.png)
+![CSS flexbox](images/justify-content-flex-start.png)
 左对齐。
 
 ```css
@@ -211,7 +211,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   justify-content:         flex-end;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/justify-content-flex-end.png)
+![CSS flexbox](images/justify-content-flex-end.png)
 右对齐。
 
 ```css
@@ -220,7 +220,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   justify-content:         center;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/justify-content-center.png)
+![CSS flexbox](images/justify-content-center.png)
 居中。
 
 ```css
@@ -229,7 +229,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   justify-content:         space-between;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/justify-content-space-between.png)
+![CSS flexbox](images/justify-content-space-between.png)
 两端对齐，项目之间的间隔相等。
 
 ```css
@@ -238,7 +238,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   justify-content:         space-around;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/justify-content-space-around.png)
+![CSS flexbox](images/justify-content-space-around.png)
 每个项目两侧的间隔相等。
 
 ## （五）align-items属性
@@ -259,7 +259,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-items:         flex-start;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-items-flex-start.png)
+![CSS flexbox](images/align-items-flex-start.png)
 交叉轴的起点对齐。
 
 ```css
@@ -268,7 +268,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-items:         flex-end;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-items-flex-end.png)
+![CSS flexbox](images/align-items-flex-end.png)
 交叉轴的终点对齐。
 
 ```css
@@ -277,7 +277,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-items:         center;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-items-center.png)
+![CSS flexbox](images/align-items-center.png)
 交叉轴的中点对齐。
 
 ```css
@@ -286,7 +286,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-items:         baseline;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-items-baseline.png)
+![CSS flexbox](images/align-items-baseline.png)
 项目的第一行文字的基线对齐。
 
 ```css
@@ -295,7 +295,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-items:         stretch;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-items-stretch.png)
+![CSS flexbox](images/align-items-stretch.png)
 如果项目未设置高度或设为auto，将占满整个容器的高度。
 
 ## （六）align-content属性
@@ -316,7 +316,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-content:         flex-start;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-content-flex-start.png)
+![CSS flexbox](images/align-content-flex-start.png)
 与交叉轴的起点对齐。
 
 ```css
@@ -325,7 +325,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-content:         flex-end;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-content-flex-end.png)
+![CSS flexbox](images/align-content-flex-end.png)
 与交叉轴的终点对齐。
 
 ```css
@@ -334,7 +334,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-content:         center;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-content-center.png)
+![CSS flexbox](images/align-content-center.png)
 与交叉轴的中点对齐。
 
 ```css
@@ -343,7 +343,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-content:         space-between;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-content-space-between.png)
+![CSS flexbox](images/align-content-space-between.png)
 与交叉轴两端对齐，轴线之间的间隔平均分布。
 
 ```css
@@ -352,7 +352,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-content:         space-around;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-content-space-around.png)
+![CSS flexbox](images/align-content-space-around.png)
 每根轴线两侧的间隔都相等。
 
 ```css
@@ -361,7 +361,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
   align-content:         stretch;
 }
 ```
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/align-content-stretch.png)
+![CSS flexbox](images/align-content-stretch.png)
 轴线占满整个交叉轴。
 
 # 五、Flexbox项目特性
@@ -376,7 +376,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 }
 ```
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-order.png)
+![CSS flexbox](images/flex-order.png)
 
 ## （二）flex-grow属性
 
@@ -391,7 +391,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 }
 ```
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-grow.png)
+![CSS flexbox](images/flex-grow.png)
 
 如果所有项目的`flex-grow`属性都为`1`，则它们将等分剩余空间（如果有的话）。如果一个项目的`flex-grow`属性为`2`，其他项目都为`1`，则前者占据的剩余空间将比其他项多一倍。
 
@@ -408,7 +408,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 }
 ```
 
-![CSS flexbox](https://raw.githubusercontent.com/z2x/blog/master/images/flex-shrink.png)
+![CSS flexbox](images/flex-shrink.png)
 
 如果所有项目的`flex-shrink`属性都为1，当空间不足时，都将等比例缩小。如果一个项目的`flex-shrink`属性为0，其他项目都为1，则空间不足时，前者不缩小。
 

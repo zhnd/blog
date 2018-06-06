@@ -189,7 +189,7 @@ Person.__proto__ === Function.prototype
 
 #### 问题8： 上例中，对对象 p可以这样调用 p.toString()。toString是哪里来的? 画出原型图?并解释什么是原型链。
 
-![prototype-__proto__](https://raw.githubusercontent.com/z2x/blog/master/images/prototype-__proto__.jpg)
+![prototype-__proto__](images/prototype-__proto__.jpg)
 
 在JavaScript中，对象具有属性和方法，对象在调用方法时会首先在自身里寻找是否具有该方法，如果没有将向上一级对象的原型中进行查找，，一次层层迭进，一直到找到要调用的属性和方法，这就是原型链。
 

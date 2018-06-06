@@ -189,7 +189,7 @@ HTML 属性应当按照以下给出的顺序依次排列，确保代码的易读
 
 显示效果：
 
-![padding center](https://raw.githubusercontent.com/z2x/blog/master/images/padding-center.png)
+![padding center](images/padding-center.png)
 
 padding方法实现垂直居中的前提的父元素尽量不设置高度，设置上下padding值，子元素的高度随内容的变化而变化。
 
@@ -228,7 +228,7 @@ padding方法实现垂直居中的前提的父元素尽量不设置高度，设�
 
 显示效果：
 
-![padding center](https://raw.githubusercontent.com/z2x/blog/master/images/position-absolute-center.png)
+![padding center](images/position-absolute-center.png)
 
 ## `vertical-align`垂直居中
 
@@ -269,7 +269,7 @@ padding方法实现垂直居中的前提的父元素尽量不设置高度，设�
   }
 ```
 
-效果图：![](https://raw.githubusercontent.com/z2x/blog/master/images/vertical-align-middle.png)
+效果图：![](images/vertical-align-middle.png)
 
 作品预览：[链接地址](https://z2x.github.io/code-learning/web/vertical-align-middle.html)
 

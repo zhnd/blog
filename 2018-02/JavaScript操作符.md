@@ -443,7 +443,7 @@ expr1, expr2:值可以是任何类型的表达式。
 
 # 运算符优先级汇总表
 
-![Operator precedence](https://raw.githubusercontent.com/z2x/blog/master/images/Operator-Precedence.png)
+![Operator precedence](images/Operator-Precedence.png)
 
 # 练习
 

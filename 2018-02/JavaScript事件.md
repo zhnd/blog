@@ -68,13 +68,13 @@ DOM2级事件定义了两个方法用于处理指定和删除事件处理程序�
 
 事件开始时由最具体的元素接收，然后逐级向上传播到较为不具体的元素；
 
-![IE bubble](https://raw.githubusercontent.com/z2x/blog/master/images/IE-bubble.png)
+![IE bubble](images/IE-bubble.png)
 
 * DOM事件流
 
 DOM2级事件规定事件流包括三个阶段，事件捕获阶段，处于目标阶段，事件冒泡阶段，首先发生的是事件捕获，为截取事件提供机会，然后是实际目标接收事件，最后是冒泡阶段。
 
-![DOM2 bubble](https://raw.githubusercontent.com/z2x/blog/master/images/DOM2-bubble.png)
+![DOM2 bubble](images/DOM2-bubble.png)
 
 #### 题目4：如何阻止事件冒泡？ 如何阻止默认事件？
 
@@ -178,9 +178,9 @@ event.returnValue = false;
 
 ```html
   <ul class="ct">
-    <li data-img="https://raw.githubusercontent.com/z2x/blog/master/images/people-sea.jpg">鼠标放置查看图片1</li>
-    <li data-img="https://raw.githubusercontent.com/z2x/blog/master/images/Sky-background.jpg">鼠标放置查看图片2</li>
-    <li data-img="https://raw.githubusercontent.com/z2x/blog/master/images/sky-sea-finish.jpg">鼠标放置查看图片3</li>
+    <li data-img="images/people-sea.jpg">鼠标放置查看图片1</li>
+    <li data-img="images/Sky-background.jpg">鼠标放置查看图片2</li>
+    <li data-img="images/sky-sea-finish.jpg">鼠标放置查看图片3</li>
   </ul>
   <div class="img-preview"></div>
 ```

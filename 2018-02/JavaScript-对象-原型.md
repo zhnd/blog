@@ -74,7 +74,7 @@ var p1 = new People('hello');
 var p2 = new People('world');
 ```
 
-![prototype](https://raw.githubusercontent.com/z2x/blog/master/images/prototype.jpg)
+![prototype](images/prototype.jpg)
 
 #### 问题5： 创建一个 Car 对象，拥有属性name、color、status；拥有方法run，stop，getStatus
 
