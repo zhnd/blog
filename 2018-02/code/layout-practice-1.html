@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>layout practice 1</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    body,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .content h1 {
+        color: #666;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .view-list ul {
+        margin-left: -10px;
+    }
+
+    .view-list ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .view-list li {
+        float: left;
+        width: 260px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+        list-style: none;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .content .view-list img {
+        width: 100%;
+        opacity: 0.75;
+    }
+    .view-list .view-detail{
+        padding: 1px 16px;
+    }
+
+    .view-detial h3{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .view-detial p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="contaniner">
+        <div class="content">
+            <h1>风景列表</h1>
+            <div class="view-list">
+                <ul>
+                    <li>
+                        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                        <div class="view-detail">
+                            <p>风景如画</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                        <div class="view-detail">
+                            <p>风景如画</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                        <div class="view-detail">
+                            <p>风景如画</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                        <div class="view-detail">
+                            <p>风景如画</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                        <div class="view-detail">
+                            <p>风景如画</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                        <div class="view-detail">
+                            <p>风景如画</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

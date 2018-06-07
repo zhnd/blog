@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>双列布局-固定栏在左</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+  .container {
+    overflow: hidden;
+  }
+
+  .side {
+    width: 200px;
+    height: 500px;
+    background-color: #00C853;
+    float: right;
+  }
+
+  .main {
+    margin-right: 210px;
+    height: 400px;
+    background: #03A9F4;
+  }
+
+  .footer {
+    height: 50px;
+    background-color: #FFCA28;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="side"></div>
+    <div class="main"></div>
+  </div>
+  <div class="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>flexbox</title>
+  <link rel="stylesheet" href="">
+  <style type="text/css" media="screen">
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .flex-container {
+    background-color: #FFAB40;
+    display: -webkit-inline-flex;
+    /* Safari */
+    display: flex;
+    margin-top: 30px;
+    height: 300px;
+  }
+
+  .box-item {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    color: #FFAB40;
+    margin: 5px;
+    font-size: 5em;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .box-1 {
+    flex-wrap: wrap;
+  }
+EditorConfig
+  .box-item-5,
+  .box-item-7 {
+    flex-shrink: : 1;
+    width: 50px;
+  }
+
+  .box-item-1,
+  .box-item-2,
+  .box-item-3,
+  .box-item-4 {
+    flex-shrink: : 1;
+    width: 50px;
+  }
+
+  .box-item-6 {
+    flex-shrink: : 0;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container box-1">
+    <div class="box-item box-item-1">1</div>
+    <div class="box-item box-item-2">2</div>
+    <div class="box-item box-item-3">3</div>
+    <div class="box-item box-item-4">4</div>
+    <div class="box-item box-item-5">5</div>
+    <div class="box-item box-item-6">6</div>
+    <div class="box-item box-item-7">7</div>
+  </div>
+</body>
+
+</html>

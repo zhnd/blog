@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas</title>
+  <style>
+    body {
+      width: 500px;
+      margin: 0 auto;
+    }
+    canvas {
+      border: 1px solid black;
+      width: 600px;
+    }
+  </style>
+</head>
+
+<body onload="draw();">
+  <canvas id="tuotrial" width="500px" height="10000px"></canvas>
+
+  <script>
+    function draw() {
+      var canvas = document.getElementById('tuotrial');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.font = '15px serif';
+        ctx.fillText('使用 fillRect 绘制填充的矩形', 5, 20);
+
+        ctx.fillStyle = 'rgb(200, 0, 0)';
+        ctx.fillRect(100, 30, 55, 50);
+
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.fillRect(130, 50, 55, 50);
+
+        ctx.fillText('使用 strokeRect 绘制一个矩形的边框', 5, 150);
+        ctx.fillText('使用 clearRect 清除指定矩形区域', 5, 180);
+        ctx.fillRect(100, 220, 100, 100);
+        ctx.clearRect(125, 245, 50, 50);
+        ctx.strokeRect(135, 255, 30, 30);
+
+        ctx.fillText('绘制三角形', 5, 360);
+        ctx.beginPath();
+        ctx.moveTo(100, 400);
+        ctx.lineTo(200, 400);
+        ctx.lineTo(150, 450);
+        ctx.fill();
+
+        ctx.fillText('绘制笑脸', 5, 480);
+        ctx.beginPath();
+        ctx.arc(150, 550, 50, 0, Math.PI * 2, true);
+        ctx.moveTo(185, 550);
+        ctx.arc(150, 550, 35, 0, Math.PI, false);
+        ctx.moveTo(135, 540);
+        ctx.arc(130, 540, 5, 0, Math.PI * 2, true);
+        ctx.moveTo(175, 540);
+        ctx.arc(170, 540, 5, 0, Math.PI * 2, true);
+        ctx.stroke();
+
+        ctx.fillText('绘制填充三角形和描边三角形', 5, 640);
+        ctx.beginPath();
+        ctx.moveTo(100, 660);
+        ctx.lineTo(200, 660);
+        ctx.lineTo(100, 760);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(120, 780);
+        ctx.lineTo(220, 780);
+        ctx.lineTo(220, 680);
+        ctx.closePath();
+        ctx.stroke();
+
+        ctx.fillText('使用Path2D绘图', 5, 820);
+        var rectangle = new Path2D();
+        rectangle.rect(50, 860, 100, 100);
+
+        ctx.stroke(rectangle);
+
+        var circle = new Path2D();
+        circle.arc(280, 910, 50, 0, Math.PI * 2);
+        ctx.fill(circle);
+
+        ctx.fillText('使用fillStyle绘制调色板', 5, 1020);
+        for (let i = 0; i < 6; i++) {
+          for (let j = 0; j < 6; j++) {
+            ctx.fillStyle = 'rgb(' + Math.floor(255 - 42.5 * i) + ',' + Math.floor(255 - 42.5 * j) + ', 0)';
+            ctx.fillRect(100 + j * 25, 1050 + i * 25, 25, 25);
+          }
+        }
+
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.fillText('使用strokeStyle绘制圆形', 5, 1250)
+        for (let i = 0; i < 6; i++) {
+          for (let j = 0; j < 6; j++) {
+            ctx.strokeStyle = 'rgb(0, ' + Math.floor(255 - 42.5 * i) + ', ' + Math.floor(255 - 42.5 * j) + ')';
+
+            ctx.beginPath();
+            ctx.arc(100 + j * 25, 1300 + i * 25, 10, 0, Math.PI * 2, true);
+            ctx.stroke();
+          }
+        }
+
+        ctx.fillText('通过globalAlpha来设置透明度', 5, 1480);
+
+        // 绘制4个矩形并放到合适位置
+        ctx.fillStyle = '#FD0';
+        ctx.fillRect(100, 1500, 75, 75);
+        ctx.fillStyle = '#6C0';
+        ctx.fillRect(175, 1500, 75, 75);
+        ctx.fillStyle = '#09F';
+        ctx.fillRect(100, 1575, 75, 75);
+        ctx.fillStyle = '#F30';
+        ctx.fillRect(175, 1575, 75, 75);
+
+        ctx.fillStyle = '#FFF';
+
+        ctx.globalAlpha = 0.2;
+
+        for (let i = 0; i < 15; i++) {
+          ctx.beginPath();
+          ctx.arc(175, 1575, 5 * i, 0, Math.PI * 2, true);
+          ctx.fill();
+        }
+
+
+        ctx.globalAlpha = 1;
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.fillText('使用rgba()分别设置轮廓和填充样式', 5, 1700);
+        ctx.fillStyle = 'rgb(255, 221, 0)';
+        ctx.fillRect(100, 1750, 150, 37.5);
+        ctx.fillStyle = 'rgb(102, 204, 0)';
+        ctx.fillRect(100, 1787.5, 150, 37.5);
+        ctx.fillStyle = 'rgb(0, 153, 255)';
+        ctx.fillRect(100, 1825, 150, 37.5);
+        ctx.fillStyle = 'rgb(255, 51, 0)';
+        ctx.fillRect(100, 1862.5, 150, 37.5);
+
+        for (var i = 0; i < 10; i++) {
+          ctx.fillStyle = 'rgba(255,255,255,' + (i + 1) / 10 + ')';
+          for (var j = 0; j < 4; j++) {
+            ctx.fillRect(105 + i * 14, 1755 + j * 37.5, 14, 27.5)
+          }
+        }
+
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.fillText('使用lineWidth设置当前绘制线段的粗细，属性值必须为整数', 5, 1950);
+        for (let i = 0; i < 10; i++) {
+          ctx.lineWidth = 1 + i;
+          ctx.beginPath();
+          ctx.moveTo(100 + i * 14, 1980);
+          ctx.lineTo(100 + i * 14, 2100);
+          ctx.stroke();
+        }
+
+        ctx.fillText('使用lineCap控制线段端点样式', 5, 2150);
+
+        // 绘制参考线
+        ctx.strokeStyle = '#09F';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(100, 2200);
+        ctx.lineTo(300, 2200);
+
+        ctx.moveTo(100, 2300);
+        ctx.lineTo(300, 2300);
+        ctx.stroke();
+
+        var lineCap = ['butt','round','square'];
+        for( let i = 0; i < lineCap.length; i++) {
+          ctx.lineCap = lineCap[i];
+          ctx.beginPath();
+          ctx.moveTo(125 + i * 50, 2200);
+          ctx.lineTo(125 + i * 50, 2300);
+          ctx.stroke();
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

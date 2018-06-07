@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文本溢出</title>
+  <style>
+    .content {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .content div {
+      border: 1px solid grey;
+      border-radius: 3px;
+    }
+
+    #single-line {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #multi-line {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <p>单行文本溢出</p>
+    <div id="single-line">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati magni corrupti tenetur, esse totam facilis magnam aliquid asperiores, veritatis voluptas ut earum voluptatem doloremque, ab in minus est! Architecto?
+    </div>
+    <p>多行文本溢出</p>
+    <div id="multi-line">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, excepturi ratione autem vitae accusantium totam optio, ullam iste ut dolores magnam, neque delectus eligendi aliquid minus ipsa veniam consequatur fugiat.
+    </div>
+  </div>
+</body>
+</html>

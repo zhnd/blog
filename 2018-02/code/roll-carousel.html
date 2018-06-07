@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jQuery carousel</title>
+  <style>
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .carousel {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 1000px;
+    height: 562.5px;
+    margin: 40px auto;
+  }
+
+  .carousel .img-content {
+    position: absolute;
+
+    overflow: hidden;
+  }
+
+  .carousel .img-content>li {
+    float: left;
+
+    width: 1000px;
+    height: 562.5px;
+  }
+
+  .carousel .img-content img {
+    width: 100%;
+  }
+
+  .carousel .arrow {
+    font-size: 2em;
+    font-weight: 1000;
+    line-height: 50px;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    transform: translateY(-50%);
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  .carousel .pre {
+    left: 30px;
+  }
+
+  .carousel .next {
+    right: 30px;
+  }
+
+  .carousel .bullet {
+    font-size: 0;
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+
+  .carousel .bullet>li {
+    display: inline-block;
+
+    width: 60px;
+    height: 15px;
+    margin: 0 5px;
+
+    cursor: pointer;
+
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
+  .active {
+    background: white;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="carousel">
+      <ul class="img-content">
+        <li><a href=""><img src="http://ov2hj85gi.bkt.clouddn.com/bing-daily-01.jpg" alt=""></a></li>
+        <li><a href=""><img src="http://ov2hj85gi.bkt.clouddn.com/bing-daily-02.jpg" alt=""></a></li>
+        <li><a href=""><img src="http://ov2hj85gi.bkt.clouddn.com/bing-daily-03.jpg" alt=""></a></li>
+        <li><a href=""><img src="http://ov2hj85gi.bkt.clouddn.com/bing-daily-04.jpg" alt=""></a></li>
+      </ul>
+      <span href="" class="arrow pre">
+        <</span>
+      <span href="" class="arrow next">></span>
+      <ul class="bullet">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+  <script>
+  var $nextBtn = $('.carousel .next');
+  var $preBtn = $('.carousel .pre');
+  var $imgContent = $('.carousel .img-content');
+  var $img = $('.carousel .img-content li');
+  var imgWidth = $img.width();
+  var imgCount = $img.length;
+  var $bullets = $('.bullet>li');
+
+  var pageIndex = 0;
+
+  var isAnimate = false;
+
+  // 将第一张图片克隆到最后
+  $imgContent.append($img.first().clone());
+  // 将最后一张图片克隆到最前
+  $imgContent.prepend($img.last().clone());
+
+  // 动态设置img-content容器的宽度
+  $imgContent.width((imgCount + 2) * imgWidth);
+
+  // 将原始照片放置在正确位置
+  $imgContent.css({ left: -imgWidth });
+
+  $nextBtn.click(function() {
+    playNext(1);
+  });
+
+  $preBtn.click(function() {
+    playPre(1);
+  });
+
+  $bullets.click(function() {
+    $this = $(this);
+    var bulletIndex = $this.index();
+    if (bulletIndex > pageIndex) {
+      playNext(bulletIndex - pageIndex);
+    } else if (bulletIndex < pageIndex) {
+      playPre(pageIndex - bulletIndex);
+    }
+    clearInterval(auto);
+  });
+
+  function playNext(len) {
+    if (isAnimate) return;
+    isAnimate = true;
+    $imgContent.animate({
+      left: '-=' + len * imgWidth
+    }, function() {
+      pageIndex += len;
+      if (pageIndex == imgCount) {
+        pageIndex = 0;
+        $imgContent.css({ left: -imgWidth }).fadeIn('slow');
+      }
+      setBullet();
+
+      isAnimate = false;
+    });
+  }
+
+  function playPre(len) {
+    $imgContent.animate({
+      left: '+=' + len * imgWidth
+    }, function() {
+      pageIndex -= len;
+      if (pageIndex < 0) {
+        pageIndex = imgCount - 1;
+        $imgContent.css({ left: -imgWidth * imgCount });
+      }
+      setBullet();
+    });
+  }
+
+  function setBullet() {
+    $bullets.removeClass('active').eq(pageIndex).addClass('active');
+  }
+
+  // 设置自动轮播
+    autoPlay =   setInterval(function() {
+    playNext(1);
+  }, 2000);
+  </script>
+</body>
+
+</html>

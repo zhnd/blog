@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>drop work</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  ::selection {
+    color: white;
+    background-color: #0adcd5;
+  }
+
+  ::-moz-selection {
+    color: white;
+    background-color: #0adcd5;
+  }
+
+  .clearfix::after {
+    display: table;
+    clear: both;
+
+    content: '';
+  }
+
+  body {
+    font-family: Roboto, sans-serif;
+
+    margin: 60px 70px;
+
+    background-color: #f7f7f7;
+  }
+
+  ul,
+  li,
+  img {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    color: #747474;
+  }
+
+  header .logo {
+    float: left;
+  }
+
+  * a {
+    text-decoration: none;
+  }
+
+  header ul {
+    float: right;
+  }
+
+  header .nav-menu {
+    line-height: 67px;
+
+    position: relative;
+
+    float: left;
+
+    padding-left: 30px;
+
+    vertical-align: middle;
+  }
+
+  header .nav-menu a {
+    font-size: 15px;
+    font-weight: 500;
+
+    padding-bottom: 2px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #848484;
+    border-bottom: 2px solid #848484;
+  }
+
+  header .nav-menu a:hover{
+    color: white;
+    background-color: #28DBD4;
+    border-bottom-color: #28DBD4;
+  }
+
+  header .dropdown-menu {
+    line-height: 40px;
+
+    position: absolute;
+
+    display: none;
+    float: none;
+
+    list-style-type: none;
+
+    background-color: #3b3b3b;
+  }
+
+  .nav-menu:nth-child(2):hover .dropdown-menu {
+    display: block;
+  }
+
+  header .dropdown-menu a {
+    padding: 0 20px;
+
+    color: #c0bdbf;
+    border: none;
+  }
+
+  main .container .introduce {
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1.4;
+
+    width: 53%;
+    margin-top: 100px;
+
+    color: #3b3b3b;
+  }
+
+  main .container .introduce span {
+    color: #0adcd5;
+  }
+
+  main .container .introduce img {
+    width: 50px;
+    margin: 30px 0;
+  }
+
+  main .container .introduce p {
+    font-size: 18px;
+    font-weight: 300;
+
+    padding: 30px 0;
+
+    color: #747474;
+  }
+
+
+  .container .art-word-list {
+    float: left;
+  }
+
+  .container .art-word-list .work-title li,
+  #more {
+    font-size: 22px;
+
+    display: inline-block;
+
+    margin: 30px 20px 30px 0;
+    padding: 5px;
+
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  .work-list-photo {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 560px;
+    height: 420px;
+  }
+
+  .work-list-photo .panels {
+    position: absolute;
+
+    overflow: hidden;
+  }
+
+  .right .panels {
+    width: 3000px;
+  }
+
+  .container .work-list-photo .panels img {
+    width: 560px;
+    height: 420px;
+
+    transition: all .6s;
+  }
+
+  .container .art-word-list li:hover img {
+    transform: scale(1.4);
+
+    opacity: .3;
+  }
+
+  .container .right .work-list-photo .panels li {
+    float: left;
+    /* 去除li标签之间的间距 */
+  }
+
+  .work-list-photo li {
+    font-size: 0;
+
+    position: relative;
+  }
+
+  .cover {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+
+    display: none;
+
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .cover span {
+    display: block;
+  }
+
+  .cover span:first-child {
+    font-size: 18px;
+    font-weight: 700;
+
+    word-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #3b3b3b;
+  }
+
+  .cover span:last-child {
+    font-size: 14px;
+    font-weight: 500;
+
+    text-transform: capitalize;
+
+    color: #747474;
+  }
+
+  .active {
+    color: white;
+    background-color: #0adcd5;
+  }
+
+  .show {
+    display: block;
+  }
+  </style>
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="logo">
+      <a href="">
+        <img src="http://ov2hj85gi.bkt.clouddn.com/drop-logo.png" alt="">
+      </a>
+    </div>
+    <nav>
+      <ul class="clearfix">
+        <li class="nav-menu"><a href="">HOME</a></li>
+        <li class="nav-menu"><a href="">PORTFOLIO</a>
+          <ul class="dropdown-menu">
+            <li><a href="">FILTER</a></li>
+            <li><a href="">LAYOUT</a></li>
+            <li><a href="">MASONRY</a></li>
+            <li><a href="">GRID</a></li>
+            <li><a href="">MOSAIC</a></li>
+            <li><a href="">SINGLE</a></li>
+          </ul>
+        </li>
+        <li class="nav-menu"><a href="">ABOUT</a></li>
+        <li class="nav-menu"><a href="">JOURNAL</a></li>
+        <li class="nav-menu"><a href="">CONTACT</a></li>
+        <li class="nav-menu"><a href="">BUY</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="introduce">
+        <h1>Great experiences build great <span>brands.</span></h1>
+        <img src="http://ov2hj85gi.bkt.clouddn.com/wave.png" alt="">
+        <p>Through brand strategy and design, we craft experiences that help brands stand out as well as stand for something.</p>
+      </div>
+      <div class="work-list clearfix">
+        <h3>works</h3>
+        <div class="art-word-list left">
+          <div class="tabs">
+            <ul class="work-title">
+              <li class="active title">bookmark</li>
+              <li class="title">ipad</li>
+              <li class="title">visiting-card</li>
+          </div>
+          </ul>
+          <div class="work-list-photo">
+            <ul class="panels">
+              <li class="image">
+                <img src="http://ov2hj85gi.bkt.clouddn.com/bookmark.jpg" alt="">
+                <div class="cover">
+                  <span>PROJECT TITLE</span>
+                  <span>Art Work</span>
+                </div>
+              </li>
+              <li class="image">
+                <img src="http://ov2hj85gi.bkt.clouddn.com/ipad.jpg" alt="">
+                <div class="cover">
+                  <span>PROJECT TITLE</span>
+                  <span>Art Work</span>
+                </div>
+              </li>
+              <li class="image">
+                <img src="http://ov2hj85gi.bkt.clouddn.com/visiting-card.jpg" alt="">
+                <div class="cover">
+                  <span>PROJECT TITLE</span>
+                  <span>Art Work</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="art-word-list right">
+          <div class="tabs">
+            <ul class="work-title">
+              <li class="active title">a4-paper</li>
+              <span id="more">more</span>
+            </ul>
+          </div>
+          <div class="work-list-photo">
+            <ul class="panels">
+              <li class="image">
+                <img src="http://ov2hj85gi.bkt.clouddn.com/a4-paper.jpg" alt="">
+                <div class="cover">
+                  <span>PROJECT TITLE</span>
+                  <span>Art Work</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+  <script>
+  var works = [{
+      name: 'cup',
+      img: 'http://ov2hj85gi.bkt.clouddn.com/cup.jpg',
+      title: 'PROJECT TITLE',
+      introduce: 'Art Work'
+    },
+    {
+      name: 'magzine',
+      img: 'http://ov2hj85gi.bkt.clouddn.com/magzine.jpg',
+      title: 'PROJECT TITLE',
+      introduce: 'Art Work'
+    },
+    {
+      name: 'book',
+      img: 'http://ov2hj85gi.bkt.clouddn.com/book.jpg',
+      title: 'PROJECT TITLE',
+      introduce: 'Art Work'
+    }
+  ];
+
+  function addWorkTitle(content) {
+    var html = '';
+    html += '<li class="title">' + content.name + '</li>';
+    return html;
+  }
+
+  function addWorkImage(content) {
+    var html = '';
+    html += '<li class="image">';
+    html += '<img src="' + content.img + '" alt="">';
+    html += '<div class="cover">';
+    html += '<span>' + content.title + '</span>';
+    html += '<span>' + content.introduce + '</span>';
+    html += '</li>';
+    return html;
+  }
+
+  $('#more').on('click', function(e) {
+    e.preventDefault();
+    $(this).unbind('click');
+    $.each(works, function(index, content) {
+      //回调函数有两个参数,第一个是元素索引,第二个为当前值
+
+      var titleHtml = addWorkTitle(content);
+      var imageHtml = addWorkImage(content);
+
+      $('.right .work-title').append(titleHtml);
+      $('.right .panels').append(imageHtml);
+    });
+  });
+
+
+  $('.work-title').on('click', '.title', function() {
+    var $this = $(this);
+    var leftIndex = $this.index('.left .title');
+    var rightIndex = $this.index('.right .title');
+    var panelHeight = $('.work-list-photo').height();
+    var panelWidth = $('.work-list-photo').width();
+
+    $this.addClass('active').siblings().removeClass('active');
+    if ($this.is('.left li')) {
+      $('.left .panels').animate({ top: -panelHeight * leftIndex + 'px' }, 500);
+    } else {
+      $('.right .panels').animate({ left: -panelWidth * rightIndex + 'px' }, 500);
+
+    }
+  });
+
+  $('.work-list-photo').on('mouseenter', '.image', function() {
+    $this = $(this).parents('.work-list-photo').find('.cover');
+    $this.slideDown(300, 'swing');
+  });
+  $('.work-list-photo').on('mouseleave', '.image', function() {
+    $this = $(this).parents('.work-list-photo').find('.cover');
+    $this.slideUp(300, 'swing');
+  });
+  </script>
+</body>
+
+</html>

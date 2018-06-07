@@ -421,9 +421,9 @@ IE6、7内有个hasLayout的概念，当元素的hasLayout属性值为true的时
 * 不在一个普通流中或一个BFC中。
 * margin在垂直方向上不毗邻。
 
-练习作品1：[查看链接](https://z2x.github.io/code-learning/web/alert.html)
-练习作品2：[查看链接](https://z2x.github.io/code-learning/web/input-form.html)
-练习作品3：[查看链接](https://z2x.github.io/code-learning/web/modal.html)
-练习作品4：[查看链接](https://z2x.github.io/code-learning/web/navigation.html)
+练习作品1：[查看链接](http://zhued.gitee.io/blog/2018-02/code/alert.html)
+练习作品2：[查看链接](http://zhued.gitee.io/blog/2018-02/code/input-form.html)
+练习作品3：[查看链接](http://zhued.gitee.io/blog/2018-02/code/modal.html)
+练习作品4：[查看链接](http://zhued.gitee.io/blog/2018-02/code/navigation.html)
 
 

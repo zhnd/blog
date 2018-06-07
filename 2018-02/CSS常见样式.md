@@ -202,9 +202,9 @@ unescape("%u5B8B%u4F53");
 
 # 关于CSS样式的几个小练习
 
-1. 绘制三角形：[查看链接](https://z2x.github.io/code-learning/web/border-graph.html);
-2. 居中的应用：[查看链接](https://z2x.github.io/code-learning/web/container.html);
-3. 小卡片制作：[查看链接](https://z2x.github.io/code-learning/web/card.html);
-4. 按钮的制作：[查看链接](https://z2x.github.io/code-learning/web/button.html).
+1. 绘制三角形：[查看链接](http://zhued.gitee.io/blog/2018-02/code/border-graph.html);
+2. 居中的应用：[查看链接](http://zhued.gitee.io/blog/2018-02/code/container.html);
+3. 小卡片制作：[查看链接](http://zhued.gitee.io/blog/2018-02/code/card.html);
+4. 按钮的制作：[查看链接](http://zhued.gitee.io/blog/2018-02/code/button.html).
 
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>三列布局-绝对定位方法</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+  .container {
+    width: 100%;
+  }
+
+  .side,
+  .right {
+    width: 200px;
+    height: 500px;
+    background-color: #00C853;
+    position: absolute;
+  }
+
+  .main {
+    margin-right: 210px;
+    margin-left: 210px;
+    height: 400px;
+    background: #03A9F4;
+  }
+  .side {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+  .footer {
+    height: 50px;
+    background-color: #FFCA28;
+    margin-top: 120px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="side"></div>
+    <div class="right"></div>
+    <div class="main"></div>
+  </div>
+  <div class="footer"></div>
+</body>
+
+</html>

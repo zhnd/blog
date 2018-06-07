@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>一栏布局（通栏）</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .layout {
+      min-width: 960px;
+      margin: 0 auto;
+    }
+
+    #header {
+      text-align: center;
+      background-color: #eee;
+      padding: 10px;
+      font-size: 0;
+    }
+    #header #btn{
+      display: inline-block;
+      border: 1px solid #ccc;
+      color: #000;
+      text-decoration: none;
+      font-size: 14px;
+      border-right: none;
+      padding: 5px 8px;
+      *display: line;
+      *zoom: 1;
+    }
+    #header #btn:first-child{
+      border-radius: 5px 0 0 5px;
+    }
+    #header #btn:last-child{
+      border: 1px solid #ccc;
+      border-radius: 0 5px 5px 0;
+    }
+
+    #content {
+      height: 400px;
+      background-color: #E0E0E0;
+      text-align: center;
+      position: relative;
+    }
+
+    #footer {
+      height: 50px;
+      background-color: #03A9F4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="header">
+      <a href="" id="btn">HTML</a>
+      <a href="" id="btn">CSS</a>
+      <a href="" id="btn">JavaScript</a>
+    </div>
+    <div class="layout" id="content">
+    </div>
+    <div class="layout" id="footer"></div>
+  </div>
+</body>
+
+</html>

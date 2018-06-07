@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>pixabay</title>
+  <link rel="stylesheet" href="">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  header input {
+    outline: none;
+    padding: 5px;
+    width: 240px;
+  }
+
+  main {
+    position: relative;
+    margin: 10px;
+  }
+
+  main::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+
+  main>figure {
+    float: left;
+    padding: 5px;
+  }
+
+  main>figure img {
+    height: 100%;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <input type="text" id="seach-ipt" placeholder='please enter picture name'>
+  </header>
+  <main></main>
+  <script>
+  var mainNode = document.querySelector('main');
+  var mainNodeWidth = parseFloat(getComputedStyle(mainNode).width);
+  var baseHeight = 200;
+  var rowList = [];
+  var rowTotalWidth = 0;
+
+  getData('beijing')
+    .then(render)
+    .catch(function(err) {
+      console.log(err);
+    });
+
+  // 通过promise的方法通过api获取数据
+  function getData(keyword) {
+    return new Promise(function(resolve, reject) {
+      var data = {
+        key: '3959515-d35b999ba4afcdd7af8e89e5f',
+        q: keyword,
+        image_type: 'photo',
+        per_page: 20
+      };
+
+      var url = 'https://pixabay.com/api/?';
+      for (var key in data) {
+        url += key + '=' + data[key] + '&';
+      }
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.send();
+      xhr.onload = function() {
+        if (this.status >= 200 && this.status < 300 || this.status == 304) {
+          var json = JSON.parse(this.response);
+          resolve(json);
+        }
+      };
+      xhr.onerror = function() {
+        reject('ajax error');
+      };
+    });
+  }
+  /*
+    // 使用api获取数据，并通过callback来使用异步数据
+    function getData(keyword,callback) {
+      var data = {
+        key: '3959515-d35b999ba4afcdd7af8e89e5f',
+        q: keyword,
+        image_type: 'photo',
+        per_page: 20
+      };
+
+      var url = 'https://pixabay.com/api/?';
+      for (var key in data) {
+        url += key + '=' + data[key] + '&';
+      }
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.send();
+      xhr.onload = function() {
+        if (this.status >= 200 && this.status < 300 || this.status == 304) {
+          var json = JSON.parse(this.response);
+          callback(json);
+        }
+      };
+    }
+    */
+
+  function render(data) {
+    data.hits.forEach(function(imgInfo) {
+      imgInfo.newHeight = baseHeight;
+      imgInfo.newWidth = baseHeight * imgInfo.webformatWidth / imgInfo.webformatHeight; // newHeight / newWidth = imgInfo.webformatHeight / imgInfo.webformatWidth
+      if (imgInfo.newWidth + rowTotalWidth >= mainNodeWidth) {
+        layout(rowList, rowTotalWidth);
+        rowList = [imgInfo];
+        rowTotalWidth = imgInfo.newWidth;
+      } else {
+        rowList.push(imgInfo);
+        rowTotalWidth += imgInfo.newWidth;
+      }
+    });
+
+    layout(rowList, rowTotalWidth);
+    rowList = [];
+    rowTotalWidth = 0;
+  }
+
+  function layout(list, rowTotalWidth) {
+    list.forEach(function(imgInfo) {
+      var figureNode = document.createElement('figure');
+      var imgNode = document.createElement('img');
+      imgNode.src = imgInfo.webformatURL;
+      // rowTotalWidth / 200 = mainNodeWidth / layoutImgHeight
+      var layoutImgHeight = baseHeight * mainNodeWidth / rowTotalWidth;
+      figureNode.style.height = layoutImgHeight + 'px';
+
+      // layoutImgHeight / layoutImgWidth = imgInfo.webformatHeight / imgInfo.webformatWidth
+      figureNode.style.width = layoutImgHeight * imgInfo.webformatWidth / imgInfo.webformatHeight + 'px';
+      figureNode.appendChild(imgNode);
+      mainNode.appendChild(figureNode);
+    });
+
+  }
+  </script>
+</body>
+
+</html>

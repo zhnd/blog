@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>layout practice 2</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    .content {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .left {
+        padding: 20px 10px;
+        margin-right: 160px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #author .avatar {
+        width: 48px;
+        border-radius: 24px;
+    }
+
+    .info,
+    .author,
+    .avatar {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .info {
+        margin-left: 10px;
+        color: #2f2f2f;
+        font-size: 1.2em;
+    }
+
+    .info .time {
+        color: gray;
+    }
+
+    article .title {
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    article p{
+        line-height: 34px;
+    }
+
+    #button {
+        padding: 3px;
+        border: 1px #ec6149 solid;
+        width: 40px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    #button a{
+        color: #ec6149;
+        text-decoration: none;
+    }
+
+    .right {
+        width: 150px;
+        float: right;
+        padding: 0 40px;
+        margin: 50px 0;
+    }
+
+    .right img {
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content clearfix">
+            <div class="right">
+                <img src="./images/learn.png" alt="">
+            </div>
+            <div class="left">
+                <header id="author" class="">
+                    <img src="./images/owl.jpg" alt="" class="avatar">
+                    <div class="info">
+                        <span class="tag">林幕之</span>
+                        <span class="time">8小时前</span>
+                    </div>
+                </header>
+                <!-- /header -->
+                <article>
+                    <h2 class="title">坚持“读书”这些年，人生真是太值了！</h2>
+                    <p class="text">2017.5.27|NO.18前几天，在国内大学的朋友给我发微信。她说：5年前，刚进大学的时候，我们是一样的起点，如果当时我和你一样坚持不断地坚持学习...</p>
+                </article>
+                <div id="button">
+                    <a href="" title="">读书</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+

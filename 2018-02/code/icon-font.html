@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Icon Font</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+    @font-face {
+        font-family: 'iconfont';
+        /* project id 373290 */
+        src: url('//at.alicdn.com/t/font_xu5ex3nf63onipb9.eot');
+        src: url('//at.alicdn.com/t/font_xu5ex3nf63onipb9.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_xu5ex3nf63onipb9.woff') format('woff'),
+        url('//at.alicdn.com/t/font_xu5ex3nf63onipb9.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_xu5ex3nf63onipb9.svg#iconfont') format('svg');
+    }
+
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 200px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .iconfont:hover {
+        color: #D81E06;
+    }
+
+    .other-iconfont:before {
+        content: "\e605";
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 使用HTML实体进行显示 -->
+    <span class="iconfont">&#xe605;</span>
+
+    <!-- 使用CSS:before进行显示 -->
+    <span class="iconfont other-iconfont"></span>
+</body>
+
+</html>

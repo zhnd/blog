@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>border radius</title>
+ <link rel="stylesheet" href="">
+ <style>
+ .box {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+ }
+.box1{
+  border-radius: 50px;
+}
+.box2{
+  border-radius: 50%;
+}
+.box3{
+  height: 100px;
+  border-radius: 200px 200px 0 0;
+}
+.box4{
+  height: 100px;
+  border-radius: 50%/50%;
+}
+.box5{
+  height: 100px;
+  border-radius: 200px 0 0 200px / 50px 0 0 50px;
+}
+
+ </style>
+</head>
+
+<body>
+ <h1>画圆角：</h1>
+ <div class="box box1"></div>
+ <h1>画圆形：把border-radius的值设置为一个正方形边长的50%</h1>
+ <div class="box box2"></div>
+ <h1>画半圆：</h1>
+ <div class="box box3"></div>
+ <h1>画椭圆：</h1>
+ <div class="box box4"></div>
+ <h1>画半椭圆：</h1>
+ <div class="box box5"></div>
+</body>
+
+</html>

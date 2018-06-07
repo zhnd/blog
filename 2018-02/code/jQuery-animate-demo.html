@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jQuery animate</title>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+  <style>
+  body {
+    width: 960px;
+    margin: 50px auto;
+  }
+
+  #main {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background: #E44B27;
+    position: relative;
+  }
+  </style>
+</head>
+
+<body>
+  <button id="btn-hide">hide</button>
+  <button id="btn-show">show</button>
+  <button id="btn-toggle">toggle</button>
+  <button id="btn-slideDown">slideDown</button>
+  <button id="btn-slideUp">slideUp</button>
+  <button id="btn-slideToggle">slideToggle</button>
+  <button id="btn-changeWidth">change width</button>
+  <button id="btn-replace">replace</button>
+  <button id="btn-move">move</button>
+  <button id="btn-stop">stop</button>
+  <button id="btn-finnsh">finish</button>
+  <div id="main"></div>
+  <script>
+  $(function() {
+    $('#btn-hide').on('click', function() {
+      $('#main').hide('slow');
+    });
+
+    $('#btn-show').on('click', function() {
+      $('#main').show('slow');
+    });
+
+    $('#btn-toggle').on('click', function() {
+      $('#main').toggle('slow');
+    });
+
+    $('#btn-slideDown').on('click', function() {
+      $('#main').slideDown('slow');
+    });
+
+    $('#btn-slideUp').on('click', function() {
+      $('#main').slideUp('slow');
+    });
+
+    $('#btn-slideToggle').on('click', function() {
+      console.log('slideToggle');
+      $('#main').slideToggle('slow');
+    });
+
+    $('#btn-changeWidth').on('click', function() {
+      $('#main').animate({
+        width: '600px'
+      }, 500);
+    });
+    $('#btn-replace').on('click', function() {
+      $('#main').animate({
+        width: '150px',
+        height: '150px',
+        left: '0',
+        top: '0',
+      });
+    });
+
+    $('#btn-move').on('click', function() {
+      var actions = [{
+          width: 150,
+          height: 150,
+          left: 0,
+          top: 0
+        },
+        {
+          left: '150px'
+        },
+        {
+          left: '300px'
+        },
+        {
+          top: '150px'
+        },
+        {
+          top: '300px'
+        },
+        {
+          left: '150px'
+        },
+        {
+          left: 0
+        },
+        {
+          top: '150px'
+        },
+        {
+          top: 0
+        }
+      ];
+      actions.forEach(function(action, index) {
+        console.log(action);
+        $('#main').animate(action, 200);
+      });
+    });
+
+    $('#btn-stop').on('click', function() {
+      console.log('stop');
+      $('#main').stop(true, true);
+    });
+
+    $('#btn-finnsh').on('click', function() {
+      console.log('finish');
+      $('#main').finish();
+    });
+
+
+
+  });
+  </script>
+</body>
+
+</html>
