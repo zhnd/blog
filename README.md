@@ -7,7 +7,8 @@
 * [Redux状态管理](https://gitee.com/zhued/blog/blob/master/2018-05/Redux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md)
 
 ### CSS部分
-
+* [CSS实现单行、多行文本溢出显示省略号（…）](https://gitee.com/zhued/blog/blob/master/2018-06/文本溢出.md)
+* [CSS文本两端对齐](https://gitee.com/zhued/blog/blob/master/2018-06/CSS文本两端对齐.md)
 * [使用flexbox进行布局](https://gitee.com/zhued/blog/blob/master/2018-02/使用flexbox进行布局.md)
 * [CSS-综合](https://gitee.com/zhued/blog/blob/master/2018-02/CSS-综合.md)
 * [浮动定位BFC边距合并](https://gitee.com/zhued/blog/blob/master/2018-02/浮动定位BFC边距合并.md)
