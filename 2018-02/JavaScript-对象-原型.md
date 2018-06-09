@@ -52,7 +52,7 @@ var personTwo = new Person('two');
 console.log(personTwo.species); //  people
 ```
 
-在上面的例子中，species属性放到了prototype对象中，新疆的实例都可以共享；
+在上面的例子中，species属性放到了prototype对象中，新建的实例都可以共享；
 同时只要修改了prototype对象，实例对象也会随着修改。
 
 
@@ -145,5 +145,3 @@ var goTop = new GoTop();
 参考资料：[http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)
 
 参考资料：[https://segmentfault.com/a/1190000000662547](https://segmentfault.com/a/1190000000662547)
-
-
