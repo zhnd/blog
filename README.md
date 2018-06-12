@@ -4,7 +4,7 @@
 
 ### React部分
 
-* [Redux状态管理](https://gitee.com/zhued/blog/blob/master/2018-05/Redux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md)
+* [Redux状态管理](./2018-05/Redux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md)
 
 ### CSS部分
 * [CSS实现单行、多行文本溢出显示省略号（…）](https://gitee.com/zhued/blog/blob/master/2018-06/文本溢出.md)
