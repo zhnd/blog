@@ -14,7 +14,7 @@ text-align CSS属性定义行内内容（例如文字）如何相对于它的块
  text-align:center作用于行内元素，使行内元素居中。
 
  此外，在定位模式中，在上级容器块中设置`text-align:center;`，可以使内容水平居中对齐。
- ![水平居中对齐](./images/text-align-center.png)
+ ![水平居中对齐](images/text-align-center.png)
 
 # IE 盒模型和W3C盒模型有什么区别?
 
