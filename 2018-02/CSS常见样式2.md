@@ -152,7 +152,7 @@ css的`background-position`属性来实现精灵图的显示。
 1. 无法缩放
 2. 不好修改
 
-CSS sprite练习：[查看链接](http://zhued.gitee.io/blog/2018-02/code/css-sprite.html)
+CSS sprite练习：[查看链接](https://z2x.github.io/blog/2018-02/code/css-sprite.html)
 
 # Icon Font（把字体做成图标）
 
@@ -215,7 +215,7 @@ CSS sprite练习：[查看链接](http://zhued.gitee.io/blog/2018-02/code/css-sp
 </body>
 ```
 
-Icon Font练习：[查看链接](http://zhued.gitee.io/blog/2018-02/code/icon-font.html)
+Icon Font练习：[查看链接](https://z2x.github.io/blog/2018-02/code/icon-font.html)
 
 # 让一个元素"看不见"有几种方式？有什么区别?
 
@@ -227,6 +227,6 @@ Icon Font练习：[查看链接](http://zhued.gitee.io/blog/2018-02/code/icon-fo
 * `z-index`:设置为无限大的值如9999;或-9999让其覆盖或者被其他元素覆盖
 
 
-模仿练习：[icecream](http://zhued.gitee.io/blog/2018-02/code/icecream.html)
+模仿练习：[icecream](https://z2x.github.io/blog/2018-02/code/icecream.html)
 
 

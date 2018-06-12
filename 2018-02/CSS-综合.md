@@ -271,7 +271,7 @@ padding方法实现垂直居中的前提的父元素尽量不设置高度，设�
 
 效果图：![](images/vertical-align-middle.png)
 
-作品预览：[链接地址](http://zhued.gitee.io/blog/2018-02/code/vertical-align-middle.html)
+作品预览：[链接地址](https://z2x.github.io/blog/2018-02/code/vertical-align-middle.html)
 
 ### `table-cell`垂直居中
 
@@ -307,6 +307,6 @@ padding方法实现垂直居中的前提的父元素尽量不设置高度，设�
 
 小练习：
 
-绘制气泡框：[查看链接](http://zhued.gitee.io/blog/2018-02/code/bubble.html)
+绘制气泡框：[查看链接](https://z2x.github.io/blog/2018-02/code/bubble.html)
 
 
