@@ -1,4 +1,4 @@
-
+<div id="top">
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
@@ -8,7 +8,6 @@
 
 <!-- /code_chunk_output -->
 
-<div id="top">
 
 在页面布局的过程中，我们经常会使用`display: inline-block`方法对目标内容的显示进行设置，在使用过程中发现以下几个特点：
 
