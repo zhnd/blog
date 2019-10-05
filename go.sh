@@ -1,4 +1,4 @@
 git add .
 git commit -m $1
-git push gitee master
-git push github master
+git push -f gitee master
+git push -f github master
