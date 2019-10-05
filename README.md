@@ -11,6 +11,20 @@
 * [CSS实现单行、多行文本溢出显示省略号（…）](./2018-06/文本溢出.md)
 * [CSS文本两端对齐](./2018-06/CSS文本两端对齐.md)
 * [使用flexbox进行布局](./2018-02/使用flexbox进行布局.md)
+
+
+### JavaScript部分
+* [重新理解JavaScript中的浅拷贝和深拷贝](./2018-07/重新理解JavaScript中的浅拷贝和深拷贝.md)
+* [原型和原型链](./2018-06/原型和原型链.md)
+
+### 工具使用
+
+1. [我的Sublime Text使用记录](./2018-04/我的SublimeText使用记录.md)
+
+<details>
+<summary>基础知识</summary>
+
+### CSS部分
 * [CSS-综合](./2018-02/CSS-综合.md)
 * [浮动定位BFC边距合并](./2018-02/浮动定位BFC边距合并.md)
 * [CSS布局](./2018-02/CSS布局.md)
@@ -18,10 +32,7 @@
 * [CSS常见样式2](./2018-02/CSS常见样式2.md)
 * [CSS选择器](./2018-02/CSS选择器.md)
 
-
 ### JavaScript部分
-* [重新理解JavaScript中的浅拷贝和深拷贝](./2018-07/重新理解JavaScript中的浅拷贝和深拷贝.md)
-* [原型和原型链](./2018-06/原型和原型链.md)
 * [前端常见设计模式](./2018-02/前端常见设计模式.md)
 * [jQuery-懒加载](./2018-02/jQuery-懒加载.md)
 * [jQuery动画与ajax](./2018-02/jQuery动画与ajax.md)
@@ -59,7 +70,4 @@
 * [HTML基础知识点](./2018-02/HTML基础知识点.md)
 * [w3school-html学习笔记](./2018-02/w3school-html学习笔记.md)
 
-
-### 工具使用
-
-1. [我的Sublime Text使用记录](./2018-04/我的SublimeText使用记录.md)
+</details>
