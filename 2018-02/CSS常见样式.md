@@ -26,35 +26,35 @@ HTML 标准中块级元素和行内元素的区别至高出现在 4.01 标准中
 
 ### 块级元素列表
 
-| 元素              | 解释     |
-| --------------- | ------ |
-| &lt;address&gt; | 联系方式信息 |
-| &lt;article&gt; | 文章内容   |
-| &lt;aside&gt;   | 伴随内容   |
-| &lt;audio&gt;   | 音频播放   |
-| &lt;video&gt;   | 视频播放   |
-| &lt;blockquote&gt;    |  块引用
-| &lt;canvas&gt;        |  绘制图形 |
-| &lt;dd&gt;            |  定义列表中条目描述 |
-| &lt;div&gt;           |  文档分区 |
-| &lt;dl&gt;            |  定义列表  |
-| &lt;fieldset&gt;      |  表单元素分组 |
-| &lt;figcaption&gt;    |  图文信息组标题 |
-| &lt;figure &gt;       |  图文信息组  |
-| &lt;header &gt;       |  区段头或者页头 |
-| &lt;footer&gt;        |  区段尾或者页尾 |
-| &lt;form &gt;         |  表单
-| &lt;h1～h6&gt;        | 标题级别 |
-| &lt;hr &gt;           |  水平分割线 |
-| &lt;noscript&gt;      |  不支持脚本或禁用脚本时显示的内容 |
-| &lt;ol&gt;            |  有序列表 |
-| &lt;ul&gt;            |  无序列表 |
-| &lt;output&gt;        |  表单输出 |
-| &lt;p&gt;             |  行
-| &lt;pre &gt;          |  预格式化文本 |
-| &lt;section&gt;       |  一个页面片段 |
-| &lt;table&gt;         |  表格
-| &lt;tfoot&gt;         |  表脚注 |
+| 元素               | 解释                             |
+| ------------------ | -------------------------------- |
+| &lt;address&gt;    | 联系方式信息                     |
+| &lt;article&gt;    | 文章内容                         |
+| &lt;aside&gt;      | 伴随内容                         |
+| &lt;audio&gt;      | 音频播放                         |
+| &lt;video&gt;      | 视频播放                         |
+| &lt;blockquote&gt; | 块引用                           |
+| &lt;canvas&gt;     | 绘制图形                         |
+| &lt;dd&gt;         | 定义列表中条目描述               |
+| &lt;div&gt;        | 文档分区                         |
+| &lt;dl&gt;         | 定义列表                         |
+| &lt;fieldset&gt;   | 表单元素分组                     |
+| &lt;figcaption&gt; | 图文信息组标题                   |
+| &lt;figure &gt;    | 图文信息组                       |
+| &lt;header &gt;    | 区段头或者页头                   |
+| &lt;footer&gt;     | 区段尾或者页尾                   |
+| &lt;form &gt;      | 表单                             |
+| &lt;h1～h6&gt;     | 标题级别                         |
+| &lt;hr &gt;        | 水平分割线                       |
+| &lt;noscript&gt;   | 不支持脚本或禁用脚本时显示的内容 |
+| &lt;ol&gt;         | 有序列表                         |
+| &lt;ul&gt;         | 无序列表                         |
+| &lt;output&gt;     | 表单输出                         |
+| &lt;p&gt;          | 行                               |
+| &lt;pre &gt;       | 预格式化文本                     |
+| &lt;section&gt;    | 一个页面片段                     |
+| &lt;table&gt;      | 表格                             |
+| &lt;tfoot&gt;      | 表脚注                           |
 
 参考信息：[信息来源](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements)
 
@@ -66,39 +66,39 @@ HTML 标准中块级元素和行内元素的区别至高出现在 4.01 标准中
 
 ### 行内元素列表
 
-| 元素               | 解释               |
-| ---------------- | ---------------- |
-| &lt;b&gt;        | 粗体字              |
+| 元素             | 解释                 |
+| ---------------- | -------------------- |
+| &lt;b&gt;        | 粗体字               |
 | &lt;big&gt;      | 大号文本             |
-| &lt;i&gt;        | 斜体字              |
+| &lt;i&gt;        | 斜体字               |
 | &lt;small&gt;    | 小号文本             |
-| &lt;tt&gt;       | 打字机文本            |
-| &lt;abbr&gt;     | 缩写               |
-| &lt;acronym&gt;  | 只取首字母的缩写         |
-| &lt;cite&gt;     | 引用(citation)     |
-| &lt;code&gt;     | 计算机代码文本          |
-| &lt;dfn&gt;      | 一个定义项目           |
+| &lt;tt&gt;       | 打字机文本           |
+| &lt;abbr&gt;     | 缩写                 |
+| &lt;acronym&gt;  | 只取首字母的缩写     |
+| &lt;cite&gt;     | 引用(citation)       |
+| &lt;code&gt;     | 计算机代码文本       |
+| &lt;dfn&gt;      | 一个定义项目         |
 | &lt;em&gt;       | 强调文本             |
 | &lt;kbd&gt;      | 键盘文本             |
 | &lt;strong&gt;   | 强调文本             |
-| &lt;samp&gt;     | 计算机代码样本          |
-| &lt;var&gt;      | 文本的变量部分          |
-| &lt;a&gt;        | 锚                |
+| &lt;samp&gt;     | 计算机代码样本       |
+| &lt;var&gt;      | 文本的变量部分       |
+| &lt;a&gt;        | 锚                   |
 | &lt;bdo&gt;      | 文字方向             |
-| &lt;br&gt;       | 简单的折行            |
-| &lt;img&gt;      | 图像               |
+| &lt;br&gt;       | 简单的折行           |
+| &lt;img&gt;      | 图像                 |
 | &lt;map&gt;      | 图像映射             |
 | &lt;object&gt;   | 内嵌对象             |
 | &lt;q&gt;        | 短的引用             |
-| &lt;script&gt;   | 客户端脚本            |
-| &lt;span&gt;     | 文档中的节            |
+| &lt;script&gt;   | 客户端脚本           |
+| &lt;span&gt;     | 文档中的节           |
 | &lt;sub&gt;      | 下标文本             |
 | &lt;sup&gt;      | 上标文本             |
-| &lt;button&gt;   | 按钮 (push button) |
+| &lt;button&gt;   | 按钮 (push button)   |
 | &lt;input&gt;    | 输入控件             |
-| &lt;label&gt;    | input 元素的标注      |
-| &lt;select&gt;   | 选择列表（下拉列表）       |
-| &lt;textarea&gt; | 多行的文本输入控件        |
+| &lt;label&gt;    | input 元素的标注     |
+| &lt;select&gt;   | 选择列表（下拉列表） |
+| &lt;textarea&gt; | 多行的文本输入控件   |
 
 参考信息：[信息来源1](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente)，[信息来源2](http://www.w3school.com.cn/tags/index.asp)
 
@@ -202,9 +202,7 @@ unescape("%u5B8B%u4F53");
 
 # 关于CSS样式的几个小练习
 
-1. 绘制三角形：[查看链接](https://z2x.github.io/blog/2018-02/code/border-graph.html);
-2. 居中的应用：[查看链接](https://z2x.github.io/blog/2018-02/code/container.html);
-3. 小卡片制作：[查看链接](https://z2x.github.io/blog/2018-02/code/card.html);
-4. 按钮的制作：[查看链接](https://z2x.github.io/blog/2018-02/code/button.html).
-
-
+1. 绘制三角形：[查看链接](https://anddi.gitee.io/blog/2018-02/code/border-graph.html);
+2. 居中的应用：[查看链接](https://anddi.gitee.io/blog/2018-02/code/container.html);
+3. 小卡片制作：[查看链接](https://anddi.gitee.io/blog/2018-02/code/card.html);
+4. 按钮的制作：[查看链接](https://anddi.gitee.io/blog/2018-02/code/button.html).

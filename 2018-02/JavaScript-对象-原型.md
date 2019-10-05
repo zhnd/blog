@@ -137,7 +137,7 @@ var goTop = new GoTop();
 #### 问题7： 使用木桶布局实现一个图片墙
 
 查看源码：[点击查看](https://github.com/z2x/achieves/blob/master/barrellayout-oop.html)
-效果预览：[点击查看](https://z2x.github.io/achieves/barrellayout-oop.html)
+效果预览：[点击查看](https://anddi.gitee.io/achieves/barrellayout-oop.html)
 
 
 参考资料：[http://www.cnblogs.com/hnrainll/archive/2012/09/18/2690846.html](http://www.cnblogs.com/hnrainll/archive/2012/09/18/2690846.html)

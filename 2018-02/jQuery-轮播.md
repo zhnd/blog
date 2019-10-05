@@ -26,11 +26,9 @@
 #### 滚动轮播
 
 查看源码：[点击查看](https://github.com/z2x/code-learning/blob/master/web/roll-carousel.html)
-效果预览：[点击查看](https://z2x.github.io/blog/2018-02/code/roll-carousel.html)
+效果预览：[点击查看](https://anddi.gitee.io/blog/2018-02/code/roll-carousel.html)
 
 #### 渐变轮播
 
 查看源码：[点击查看](https://github.com/z2x/code-learning/blob/master/web/gradient-carousel.html)
-效果预览：[点击查看](https://z2x.github.io/blog/2018-02/code/gradient-carousel.html)
-
-
+效果预览：[点击查看](https://anddi.gitee.io/blog/2018-02/code/gradient-carousel.html)

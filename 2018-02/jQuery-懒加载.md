@@ -54,6 +54,4 @@ $(window).on('scroll', function() {
 #### 题目5： 实现视频中的图片懒加载效果
 
 查看源码：[点击查看](https://github.com/z2x/code-learning/blob/master/web/delay-loading.html)
-效果预览：[点击查看](https://z2x.github.io/blog/2018-02/code/delay-loading.html)
-
-
+效果预览：[点击查看](https://anddi.gitee.io/blog/2018-02/code/delay-loading.html)

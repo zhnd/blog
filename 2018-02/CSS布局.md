@@ -33,7 +33,7 @@
       }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-1.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-1.html)
 
 **最大宽度属性max-width**
 
@@ -79,7 +79,7 @@ max-width: auto |  length  | percent;
     }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-2.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-2.html)
 
 **最小宽度属性min-width**
 
@@ -135,7 +135,7 @@ min-width: aotu | length | percent;
   }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-3.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-3.html)
 
 ### 固定栏在右
 
@@ -171,7 +171,7 @@ min-width: aotu | length | percent;
   }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-4.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-4.html)
 
 # 三列布局
 
@@ -221,7 +221,7 @@ min-width: aotu | length | percent;
   }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-5.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-5.html)
 
 ### 绝对定位方法
 
@@ -269,7 +269,7 @@ min-width: aotu | length | percent;
   }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-6.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-6.html)
 
 ## 双飞翼布局
 
@@ -326,7 +326,7 @@ min-width: aotu | length | percent;
   }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-7.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-7.html)
 
 ### 圣杯布局
 
@@ -386,12 +386,10 @@ min-width: aotu | length | percent;
     }
 ```
 
-查看链接：[点击查看](https://z2x.github.io/blog/2018-02/code/layout-8.html)
+查看链接：[点击查看](https://anddi.gitee.io/blog/2018-02/code/layout-8.html)
 
 
 
-练习作品1：[查看链接](https://z2x.github.io/blog/2018-02/code/layout-practice-1.html)
+练习作品1：[查看链接](https://anddi.gitee.io/blog/2018-02/code/layout-practice-1.html)
 
-练习作品1：[查看链接](https://z2x.github.io/blog/2018-02/code/layout-practice-2.html)
-
-
+练习作品1：[查看链接](https://anddi.gitee.io/blog/2018-02/code/layout-practice-2.html)
