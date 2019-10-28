@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>translucent border</title>
+    <style>
+      body {
+        background: url('../images/stone-art.jpg') no-repeat;
+        background-size: cover;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      .main {
+        margin: 40px auto;
+        max-width: 20em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+
+        color: #fbfbfb;
+        background: #ae5a44;
+      }
+
+      .box {
+        margin-bottom: 1em;
+        padding: 1em;
+        background: white;
+
+        font: 100%/1.5 sans-serif;
+      }
+
+      #rgba {
+        border: 10px solid rgba(205, 151, 140, 50%);
+      }
+
+      #hsla {
+        border: 10px solid hsla(0, 0%, 100%, 0.5);
+      }
+
+      #dot-border {
+        border: 10px solid rgba(205, 151, 140, 50%);
+        border-style: dotted;
+      }
+
+      #transparent-border {
+        border: 10px solid rgba(205, 151, 140, 50%);
+        background-clip: padding-box;
+      }
+
+      #multiple-border {
+        box-shadow: 0 0 0 10px #655,
+                    0 0 0 15px deeppink,
+                    0 0 0 20px rgba(205, 151, 140, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2>1. 透明边框</h2>
+      <div class="box" id="rgba">
+        <h4>使用RGBA设置边框颜色</h4>
+        <p>Can I haz semi-transparent borders? Pretty please?</p>
+      </div>
+      <div class="box" id="hsla">
+        <h4>使用HSLA设置边框颜色</h4>
+        <p>Can I haz semi-transparent borders? Pretty please?</p>
+      </div>
+
+      <div class="box" id="dot-border">
+        <h4>虚线边框显示边框背景</h4>
+        <p>Can I haz semi-transparent borders? Pretty please?</p>
+      </div>
+
+      <div class="box" id="transparent-border">
+        <h4>使用background-clip实现透明边框</h4>
+        <p>Can I haz semi-transparent borders? Pretty please?</p>
+      </div>
+
+      <h2>2. 多重边框</h2>
+      <div class="box" id="multiple-border">
+        <h4>使用box-show实现多重边框</h4>
+        <p>Can I haz semi-transparent borders? Pretty please?</p>
+      </div>
+    </div>
+  </body>
+</html>
