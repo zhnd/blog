@@ -19,7 +19,8 @@
 
 ### 工具使用
 
-1. [我的Sublime Text使用记录](./2018-04/我的SublimeText使用记录.md)
+* [本地环境配置全局eslint和prettier](./2020-08/本地环境配置全局eslint和prettier.md)
+* [我的Sublime Text使用记录](./2018-04/我的SublimeText使用记录.md)
 
 <details>
 <summary>基础知识</summary>
@@ -71,3 +72,4 @@
 * [w3school-html学习笔记](./2018-02/w3school-html学习笔记.md)
 
 </details>
+
