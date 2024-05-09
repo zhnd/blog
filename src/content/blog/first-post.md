@@ -1,16 +1,25 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-heroImage: '/blog-placeholder-3.jpg'
+title: 创建了新的个人网站
+description: “历经多次迁移和修改，再次搭建了个人网站，用来记录我的学习笔记和内容分享。希望可以用内容输出的方式不断提升自己，持续学习。”
+pubDate: "May 12, 2024 11:23 PM"
+tags:
+  - record
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+拥有个人网站的想法由来已久，但是之前的很多次折腾经历，不仅浪费了太多的时间，也没有很好的坚持下来进行内容输出。
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+这次搭建的网站采用的技术栈主要有：
+- [astro](https://astro.build)
+- [Tailwind CSS](https://tailwindcss.com)
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+目前域名是在阿里云上注册，想在之后迁移到 [GoDaddy](https://www.godaddy.com/)。
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+网站部署在 [Cloudflare](https://www.cloudflare.com/zh-cn/)，之前尝试部署在阿里云 OSS 和七牛云，各种认证和权限管理，花费了不少精力，最后打算试试 Cloudflare，前后大概部署了不到10分钟，还可以直接推送代码到 GitHub 实现自动部署，嗯，就是很快。
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+一开始怀疑速度会很慢，测试昆明深圳访问速度都很不错。
+
+之前购买了 [IA Writer](https://ia.net/writer)，可以直接将 astro 项目的 content 文件夹添加到里面，直接使用它来写文本输出，最爱的打字机模式，体验真的很不错，强烈推荐。
+
+这些都是工具，希望往后可以有更多的内容输出，记录曾经，提高认知，发现生活。
+
+
