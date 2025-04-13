@@ -1,11 +1,11 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import BaseHead, {
   type Props as HeadProps,
-} from "../components/base-head.astro";
-import Footer from "../components/footer.astro";
-import Header from "../components/header.astro";
-import Nav from "../components/nav.astro";
+} from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
 
 export type Props = HeadProps & { showHeader?: boolean };
 
@@ -16,13 +16,12 @@ const { showHeader = true, ...head } = Astro.props;
 <html lang="zh" class="antialiased break-words">
   <head>
     <BaseHead {...head} />
-
     <script>
       if (localStorage.theme === "dark") {
         document.documentElement.classList.add("dark");
       }
     </script>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body class="bg-main text-main">
     <div class="flex flex-col min-h-screen px-4 md:px-8">

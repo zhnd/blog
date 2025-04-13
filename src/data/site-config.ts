@@ -1,5 +1,3 @@
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
-
 export type Image = {
   src: string;
   alt?: string;
@@ -25,6 +23,7 @@ export type Subscribe = {
 };
 
 export type SiteConfig = {
+  website: string;
   logo?: Image;
   title: string;
   subtitle?: string;
@@ -40,8 +39,9 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-  title: SITE_TITLE,
-  subtitle: SITE_DESCRIPTION,
+  website: "https://outinx.com/",
+  title: "宇宙的有趣",
+  subtitle: "此处通往繁星",
   description: "记录我的学习笔记以及内容分享。",
   image: {
     src: "",
@@ -69,14 +69,9 @@ const siteConfig: SiteConfig = {
     },
     {
       text: "X/Twitter",
-      href: "https://twitter.com/ph_outin",
+      href: "https://x.com/zhnd_18",
     },
   ],
-  subscribe: {
-    title: "Subscribe to Outinx Newsletter",
-    text: "One update per week. All the latest posts directly in your inbox.",
-    formUrl: "#",
-  },
   postsPerPage: 8,
   projectsPerPage: 8,
 };
