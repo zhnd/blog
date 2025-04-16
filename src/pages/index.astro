@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import Button from "../components/button.astro";
-import Hero from "../components/hero.astro";
 import PostPreview from "../components/post-preview.astro";
 import siteConfig from "../data/site-config";
 import BaseLayout from "../layouts/base-layout.astro";
@@ -12,7 +11,6 @@ const featuredPosts = posts.filter(({ data }) => data.isFeatured);
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
-  <Hero />
   {
     featuredPosts?.length > 0 && (
       <div class="mb-16 sm:mb-24">
