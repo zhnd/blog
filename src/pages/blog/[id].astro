@@ -4,7 +4,6 @@ import BaseLayout from "../../layouts/base-layout.astro";
 import Button from "../../components/button.astro";
 import FormattedDate from "../../components/formatted-date.astro";
 import PostPreview from "../../components/post-preview.astro";
-import Subscribe from "../../components/subscribe.astro";
 import { sortItemsByDateDesc } from "../../utils/data-utils";
 import { slugify } from "../../utils/common-utils";
 
@@ -113,7 +112,6 @@ const { Content } = await render(post);
       </div>
     )
   }
-  <Subscribe class="my-16 sm:my-24" />
 </BaseLayout>
 
 <script>
