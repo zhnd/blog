@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import Button from "../components/Button.astro";
-import Hero from "../components/Hero.astro";
-import PostPreview from "../components/PostPreview.astro";
+import Button from "../components/button.astro";
+import Hero from "../components/hero.astro";
+import PostPreview from "../components/post-preview.astro";
 import siteConfig from "../data/site-config";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/base-layout.astro";
 import { sortItemsByDateDesc } from "../utils/data-utils";
 
 const posts = (await getCollection("blog")).sort(sortItemsByDateDesc);
