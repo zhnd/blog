@@ -1,98 +1,89 @@
-@import '@fontsource-variable/inter' layer(base);
-@import '@fontsource-variable/newsreader' layer(base);
-@import '@fontsource-variable/newsreader/wght-italic.css' layer(base);
-
-@import 'tailwindcss';
-@plugin '@tailwindcss/typography';
-
-@custom-variant dark (&:where(.dark, .dark *));
-
-:root {
-    --text-main: #171717;
-    --bg-main: #f2f1ec;
-    --bg-muted: #eae9e1;
-    --border-main: #171717;
-}
-html.dark {
-    --text-main: #f2f1ec;
-    --bg-main: #171717;
-    --bg-muted: #242424;
-    --border-main: #f2f1ec;
+html {
+  --at-apply: 'bg-background c-secondary antialiased';
+  scrollbar-width: thin;
+  scrollbar-color: oklch(var(--un-preset-theme-colors-secondary) / 0.25) transparent;
+  scrollbar-gutter: stable;
 }
 
-/* Cyan */
-/*
-:root {
-    --text-main: #162a2b;
-    --bg-main: #d6e0e2;
-    --bg-muted: #ccd8db;
-    --border-main: #162a2b;
+/* Fix Flash Issue On iOS */
+body {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
-html.dark {
-    --text-main: #d6e0e2;
-    --bg-main: #162a2b;
-    --bg-muted: #1c3537;
-    --border-main: #d6e0e2;
-}
-*/
-
-/* Green */
-/*
-:root {
-    --text-main: #3a4238;
-    --bg-main: #f3efe6;
-    --bg-muted: #eee9dc;
-    --border-main: #3a4238;
-}
-html.dark {
-    --text-main: #f3efe6;
-    --bg-main: #5e6c5b;
-    --bg-muted: #596756;
-    --border-main: #f3efe6;
-}
-*/
-
-@theme inline {
-    --font-sans: 'Inter Variable', sans-serif;
-    --font-serif: 'Newsreader Variable', serif;
-    --text-color-main: var(--text-main);
-    --background-color-main: var(--bg-main);
-    --background-color-muted: var(--bg-muted);
-    --border-color-main: var(--border-main);
+body::selection {
+  --at-apply: 'bg-highlight';
 }
 
-@layer utilities {
-    .prose {
-        --tw-prose-body: var(--text-color-main);
-        --tw-prose-headings: var(--text-color-main);
-        --tw-prose-lead: var(--text-color-main);
-        --tw-prose-links: var(--text-color-main);
-        --tw-prose-bold: var(--text-color-main);
-        --tw-prose-counters: var(--text-color-main);
-        --tw-prose-bullets: var(--text-color-main);
-        --tw-prose-hr: var(--border-color-main);
-        --tw-prose-quotes: var(--text-color-main);
-        --tw-prose-quote-borders: var(--border-color-main);
-        --tw-prose-captions: var(--text-color-main);
-        --tw-prose-kbd: var(--text-color-main);
-        --tw-prose-code: var(--text-color-main);
-        --tw-prose-th-borders: var(--border-color-main);
-        --tw-prose-td-borders: var(--border-color-main);
-    }
+/* PhotoSwipe Background Color */
+.pswp .pswp__bg {
+  --at-apply: 'bg-background!';
+}
 
-    .prose a {
-        @apply underline font-normal decoration-1 underline-offset-2 decoration-dashed hover:decoration-solid;
-    }
+/* Fix KaTeX Overflow with Hidden Scrollbar */
+.katex-display {
+  --at-apply: 'my-6 overflow-x-auto overflow-y-hidden scrollbar-hidden';
+}
+.katex-display::-webkit-scrollbar {
+  display: none;
+}
 
-    .prose :where(h1, h2, h3, h4, h5, h6) {
-        @apply font-serif font-medium;
-    }
+/* Highlight Hover Animation */
+.highlight-static,
+.highlight-hover {
+  --at-apply: 'relative inline-block';
+}
+.highlight-static::after,
+.highlight-hover::after {
+  content: '';
+  --at-apply: 'absolute left-0 z--1 h-0.5em w-full bg-highlight';
+}
+.highlight-static::after,
+.highlight-hover:hover::after {
+  --at-apply: 'origin-bottom-left scale-x-100';
+}
+.highlight-hover::after {
+  --at-apply: 'origin-bottom-right scale-x-0 transition-transform ease-out lg:duration-300';
+}
 
-    .prose :where(code, strong) {
-        @apply font-medium;
-    }
+/* Heading Anchor Link */
+.heading-anchor-link {
+  --at-apply: 'inline-block translate-y-0.1em';
+}
+h1:hover .heading-anchor-link svg,
+h2:hover .heading-anchor-link svg,
+h3:hover .heading-anchor-link svg,
+h4:hover .heading-anchor-link svg {
+  --at-apply: 'op-40';
+}
+.heading-anchor-link svg {
+  --at-apply: 'ml-0.4em aspect-square w-0.9em op-0 transition-opacity ease-out active:scale-90';
+}
+h1:hover .heading-anchor-link svg:hover,
+h2:hover .heading-anchor-link svg:hover,
+h3:hover .heading-anchor-link svg:hover,
+h4:hover .heading-anchor-link svg:hover {
+  --at-apply: 'op-80';
+}
 
-    .prose blockquote {
-        @apply font-serif font-normal italic border-none pl-0 text-[1.375em] leading-snug sm:text-[1.66667em];
-    }
+/* Code Copy Button */
+.code-copy-button {
+  --at-apply: 'absolute right-2.2 top-2.2 z-99 aspect-square w-8 cursor-pointer uno-round-border border-secondary/15';
+  --at-apply: 'bg-background c-secondary/80 op-100 hover:(border-primary/15 c-primary/80) lg:op-0';
+  transition: opacity 300ms ease-out, background-color 150ms ease-out;
+}
+.code-block-wrapper:hover .code-copy-button {
+  --at-apply: 'op-100';
+}
+.code-copy-button.copy-success {
+  --at-apply: 'border-none bg-emerald-600 c-background';
+}
+html.dark .code-copy-button.copy-success {
+  --at-apply: 'bg-emerald-500';
+}
+.code-copy-button svg {
+  --at-apply: 'mx-auto aspect-square w-50%';
+}
+.code-copy-button svg,
+.code-copy-button svg path {
+  --at-apply: 'pointer-events-none';
 }
