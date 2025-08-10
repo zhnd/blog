@@ -1,0 +1,63 @@
+---
+import { getCollection } from "astro:content";
+import PostList from "../../components/PostList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
+import Layout from "../../layouts/Layout.astro";
+
+const pageSize = 10;
+
+export async function getStaticPaths() {
+  const posts = (await getCollection("blog")).sort(
+    (a, b) =>
+      new Date(b.data.publishedDate).valueOf() -
+      new Date(a.data.publishedDate).valueOf()
+  );
+  const totalPages = Math.ceil(posts.length / pageSize);
+  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, i) => {
+    const page = i + 2; // start from /page/2
+    const start = (page - 1) * pageSize;
+    const end = start + pageSize;
+    const slice = posts.slice(start, end);
+    return {
+      params: { page: String(page) },
+      props: { page, totalPages, slice },
+    };
+  });
+}
+
+const { page, totalPages, slice } = Astro.props as {
+  page: number;
+  totalPages: number;
+  slice: any[];
+};
+const hasPrev = page > 1;
+const hasNext = page < totalPages;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Layout
+      title={`${SITE_TITLE} — Page ${page}`}
+      description={SITE_DESCRIPTION}
+    >
+      <header class="mb-8 space-y-2">
+        <h1
+          class="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-100"
+        >
+          {SITE_TITLE}
+        </h1>
+        <p class="text-gray-600 dark:text-gray-300">{SITE_DESCRIPTION}</p>
+      </header>
+      <PostList
+        items={slice}
+        page={page}
+        total={totalPages * pageSize}
+        pageSize={pageSize}
+        pageBase="/page"
+        homePath="/"
+        heading="Posts"
+      />
+    </Layout>
+  </head>
+</html>

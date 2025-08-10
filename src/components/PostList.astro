@@ -1,0 +1,108 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+interface PostEntry {
+  id: string;
+  data: {
+    title: string;
+    excerpt?: string;
+    publishedDate: string | Date;
+  };
+}
+
+interface Props {
+  items: PostEntry[];
+  page?: number; // current page number (1-based)
+  total?: number; // total number of posts
+  pageSize?: number; // items per page
+  pageBase?: string; // base path for numbered pages, e.g. '/page'
+  homePath?: string; // path for page 1 (usually '/')
+  showExcerpt?: boolean;
+  heading?: string;
+}
+
+const {
+  items = [],
+  page = 1,
+  total = items.length,
+  pageSize = 10,
+  pageBase = "/page",
+  homePath = "/",
+  heading = "Posts",
+} = Astro.props as Props;
+
+const totalPages = Math.max(1, Math.ceil(total / pageSize));
+const hasPrev = page > 1;
+const hasNext = page < totalPages;
+
+const prevHref = page === 2 ? homePath : `${pageBase}/${page - 1}`;
+const nextHref = `${pageBase}/${page + 1}`;
+---
+
+<section aria-labelledby="post-list-heading" class="mt-8">
+  <h2 id="post-list-heading" class="sr-only">{heading}</h2>
+  {
+    items.length === 0 ? (
+      <p class="text-sm text-gray-500 dark:text-gray-400">暂无文章</p>
+    ) : (
+      <ul>
+        {items.map((post) => (
+          <li class="py-4">
+            <article>
+              <h3 class="text-lg font-medium tracking-tight text-gray-900 dark:text-gray-100">
+                <a
+                  class="hover:underline underline-offset-4"
+                  href={`/blog/${post.id}/`}
+                >
+                  {post.data.title}
+                </a>
+              </h3>
+
+              <p>
+                <FormattedDate date={post.data.publishedDate} />
+              </p>
+
+              {post.data.excerpt && post.data.excerpt && (
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                  {post.data.excerpt}
+                </p>
+              )}
+            </article>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  {
+    totalPages > 1 && (
+      <nav
+        class="mt-6 flex items-center justify-between text-sm"
+        aria-label="Pagination"
+      >
+        {hasPrev ? (
+          <a
+            class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+            href={prevHref}
+          >
+            ← 上一页
+          </a>
+        ) : (
+          <span />
+        )}
+        <span class="text-gray-500 dark:text-gray-400">
+          第 {page} / {totalPages} 页
+        </span>
+        {hasNext ? (
+          <a
+            class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+            href={nextHref}
+          >
+            下一页 →
+          </a>
+        ) : (
+          <span />
+        )}
+      </nav>
+    )
+  }
+</section>
