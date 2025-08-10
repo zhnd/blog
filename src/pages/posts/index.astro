@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import PostList from "../../components/PostList.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = (await getCollection("posts")).sort(
+  (a, b) =>
+    new Date(b.data.publishedDate).valueOf() -
+    new Date(a.data.publishedDate).valueOf()
+);
+---
+
+<Layout title={`${SITE_TITLE} — Blog`} description={SITE_DESCRIPTION}>
+  <header class="mb-8 space-y-2">
+    <h1
+      class="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-100"
+    >
+      All posts
+    </h1>
+    <p class="text-gray-600 dark:text-gray-300">全部文章</p>
+  </header>
+  <PostList
+    items={posts}
+    page={1}
+    total={posts.length}
+    pageSize={posts.length}
+    pageBase="/page"
+    homePath="/"
+    heading="All posts"
+  />
+</Layout>
