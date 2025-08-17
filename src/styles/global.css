@@ -1,34 +1,13 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
+@import "./article.css";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Legacy Astro Code Styles */
 html.dark .astro-code,
 html.dark .astro-code span {
   color: var(--shiki-dark) !important;
   background-color: var(--shiki-dark-bg) !important;
-}
-
-:where(.prose code:not(pre code)) {
-  background-color: #f5f5f5;
-  color: #d63384;
-  padding: 0.2em 0.4em;
-  border-radius: 0.25rem;
-}
-
-:where(.dark .prose code:not(pre code)) {
-  background-color: #2d2d2d;
-  color: #ff7eb6;
-}
-
-:where(.prose code:not(pre code))::before,
-:where(.prose code:not(pre code))::after {
-  content: none !important;
-}
-
-:where(.prose code)::before,
-:where(.prose code)::after {
-  content: none !important;
 }
 
 :where(pre.astro-code) {
@@ -37,18 +16,5 @@ html.dark .astro-code span {
 
 :where(.dark pre.astro-code) {
   border-width: 0;
-}
-
-:where(.prose table) {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-:where(.prose table th),
-:where(.prose table td) {
-  white-space: nowrap;
 }
 

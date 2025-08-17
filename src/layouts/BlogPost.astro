@@ -15,7 +15,7 @@ const { title, excerpt, publishedDate } = Astro.props;
     <p class="text-sm text-gray-600 dark:text-gray-400 my-4">
       <FormattedDate date={publishedDate} />
     </p>
-    <div class="space-y-4 prose prose-neutral dark:prose-invert">
+    <div class="space-y-4 article-content">
       <slot />
     </div>
   </article>
