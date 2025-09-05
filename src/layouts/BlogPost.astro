@@ -1,5 +1,6 @@
 ---
 import FormattedDate from "../components/FormattedDate.astro";
+import GiscusComments from "../components/GiscusComments.astro";
 import type { PostMetaInfoType } from "../content.config";
 import Layout from "./Layout.astro";
 
@@ -25,4 +26,6 @@ const { title, publishedDate } = postMetaInfo;
       <slot />
     </div>
   </article>
+
+  <GiscusComments />
 </Layout>
