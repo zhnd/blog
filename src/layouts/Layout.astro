@@ -6,17 +6,17 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import type { PostMetaInfoType } from "../content.config";
 
 export interface Props {
-  postMetaInfo: PostMetaInfoType;
+  metaInfo?: Partial<PostMetaInfoType>;
 }
 
-const {
-  postMetaInfo = {
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
-    publishedDate: new Date(),
-    tags: [],
-  },
-} = Astro.props;
+const { metaInfo = {} } = Astro.props;
+
+const postMetaInfo = {
+  title: metaInfo.title ?? SITE_TITLE,
+  description: metaInfo.description ?? SITE_DESCRIPTION,
+  publishedDate: metaInfo.publishedDate ?? new Date(),
+  tags: metaInfo.tags ?? [],
+};
 ---
 
 <!doctype html>
