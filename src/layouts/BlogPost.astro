@@ -1,11 +1,17 @@
 ---
 import FormattedDate from "../components/FormattedDate.astro";
+import type { PostMetaInfoType } from "../content.config";
 import Layout from "./Layout.astro";
 
-const { title, excerpt, publishedDate } = Astro.props;
+export interface Props {
+  postMetaInfo: PostMetaInfoType;
+}
+
+const { postMetaInfo } = Astro.props;
+const { title, publishedDate } = postMetaInfo;
 ---
 
-<Layout title={title} description={excerpt}>
+<Layout postMetaInfo={postMetaInfo}>
   <article class="max-w-none">
     <h1
       class="mt-2 text-3xl font-medium tracking-tight text-gray-950 dark:text-white"

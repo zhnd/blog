@@ -3,15 +3,26 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import type { PostMetaInfoType } from "../content.config";
 
-// Props allow pages to set title/description; fallback to site defaults
-const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
+export interface Props {
+  postMetaInfo: PostMetaInfoType;
+}
+
+const {
+  postMetaInfo = {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    publishedDate: new Date(),
+    tags: [],
+  },
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="zh" class="theme">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead postMetaInfo={postMetaInfo} />
   </head>
   <body
     class="bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100"

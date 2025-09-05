@@ -1,6 +1,6 @@
 ---
 title: 前端性能优化：请求折叠与 inflight 请求队列
-excerpt: "深入探讨请求折叠（Request Collapsing）技术在前端性能优化中的应用。通过 inflight 请求队列避免重复 API 调用，提升页面加载速度，降低服务器压力。包含实现原理介绍以及 React Query 中的应用。"
+description: "深入探讨请求折叠（Request Collapsing）技术在前端性能优化中的应用。通过 inflight 请求队列避免重复 API 调用，提升页面加载速度，降低服务器压力。包含实现原理介绍以及 React Query 中的应用。"
 publishedDate: 2025-06-08
 tags:
   - dev-notes

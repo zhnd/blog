@@ -1,6 +1,6 @@
 ---
 title: QueryBox：现代化智能 GraphQL 请求工具 🚀
-excerpt: "QueryBox 是一款专为 GraphQL 开发者设计的智能化请求管理工具，提供 Schema 可视化、历史记录管理、AI 辅助查询等功能，提升开发效率。"
+description: "QueryBox 是一款专为 GraphQL 开发者设计的智能化请求管理工具，提供 Schema 可视化、历史记录管理、AI 辅助查询等功能，提升开发效率。"
 publishedDate: 2025-04-13
 tags:
   - QueryBox

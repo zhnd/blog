@@ -1,0 +1,68 @@
+---
+import type { PostMetaInfoType } from "../content.config";
+
+export interface Props {
+  postMetaInfo: PostMetaInfoType;
+}
+
+const siteUrl = Astro.site;
+if (!siteUrl) {
+  throw new Error('Please set "site" in your astro.config.mjs');
+}
+
+const {
+  postMetaInfo: { title, description, publishedDate, updatedDate },
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const datePublished = new Date(publishedDate).toISOString();
+const dateModified = new Date(updatedDate || publishedDate).toISOString();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description: description,
+  author: {
+    "@type": "Person",
+    name: "zhnd",
+  },
+  datePublished,
+  dateModified,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalUrl,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "zhnd",
+    logo: {
+      "@type": "ImageObject",
+      url: new URL("/favicon.svg", siteUrl).href,
+    },
+  },
+};
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="article" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content="outinx" />
+<meta property="article:published_time" content={datePublished} />
+<meta property="article:modified_time" content={dateModified} />
+<meta property="article:author" content="zhnd" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(jsonLd)}
+/>

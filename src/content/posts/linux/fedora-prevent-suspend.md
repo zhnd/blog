@@ -1,6 +1,6 @@
 ---
 title: Fedora SSH 连接时智能防止系统挂起
-excerpt: "解决 Fedora Workstation SSH 连接时自动挂起的问题。通过 systemd-inhibit 机制实现智能检测：有 SSH 连接时阻止挂起，无连接时恢复正常电源管理。包含完整配置步骤、监控脚本和故障排除方法。"
+description: "解决 Fedora Workstation SSH 连接时自动挂起的问题。通过 systemd-inhibit 机制实现智能检测：有 SSH 连接时阻止挂起，无连接时恢复正常电源管理。包含完整配置步骤、监控脚本和故障排除方法。"
 publishedDate: 2025-08-30
 tags:
   - Linux

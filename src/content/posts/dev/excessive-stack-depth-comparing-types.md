@@ -1,6 +1,6 @@
 ---
 title: Excessive Stack Depth Comparing Types - 调查与解决
-excerpt: "本文记录了在 TypeScript 中遇到 Excessive stack depth comparing types 错误的调查与解决过程，包括错误原因分析、调试日志查看、以及通过优化类型定义解决问题的详细步骤。"
+description: "本文记录了在 TypeScript 中遇到 Excessive stack depth comparing types 错误的调查与解决过程，包括错误原因分析、调试日志查看、以及通过优化类型定义解决问题的详细步骤。"
 publishedDate: 2025-04-16
 tags:
   - dev-notes

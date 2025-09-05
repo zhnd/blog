@@ -1,6 +1,6 @@
 ---
 title: Codegen 加速开发：从数据结构到模版代码
-excerpt: "Codegen 的使用减少了重复劳动、提高了类型安全，特别适合个人项目或小团队开发。Codegen 虽不是万能，但用得好可以极大提高开发体验和项目质量。"
+description: "Codegen 的使用减少了重复劳动、提高了类型安全，特别适合个人项目或小团队开发。Codegen 虽不是万能，但用得好可以极大提高开发体验和项目质量。"
 publishedDate: 2025-04-20
 tags:
   - dev-notes
